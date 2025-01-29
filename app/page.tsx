@@ -123,7 +123,7 @@ export default function Home() {
           {/* Central Content */}
           <div className="text-center max-w-4xl z-10">
             <div className="inline-flex items-center bg-black/20 backdrop-blur-md rounded-full px-4 py-2 border border-white/5 mb-8">
-              <span className="text-base text-white/80 font-bold scale-125">Finatic Labs</span>
+              <span className="text-base text-white/80 font-bold scale-125">Launching Soon!</span>
             </div>
             <h1 className="text-[64px] leading-tight font-light mb-4">
               <span className="text-white/40">Intelligence Engineered for</span> Modern Finance
