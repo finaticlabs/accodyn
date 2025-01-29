@@ -14,26 +14,34 @@ const config: Config = {
   			'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
   		},
   		keyframes: {
-  			appear: {
-  				'0%': {
-  					opacity: '0'
-  				},
-  				'100%': {
-  					opacity: '100%'
-  				}
-  			}
+  			fadeIn: {
+  				'0%': { opacity: '0' },
+  				'100%': { opacity: '1' },
+  			},
+  			slideUp: {
+  				'0%': { transform: 'translateY(20px)', opacity: '0' },
+  				'100%': { transform: 'translateY(0)', opacity: '1' },
+  			},
   		},
   		animation: {
-  			appear: 'appear 300ms ease-out forwards'
+  			'fade-in': 'fadeIn 0.5s ease-out forwards',
+  			'slide-up': 'slideUp 0.5s ease-out forwards'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
+  			sm: 'calc(var(--radius) - 4px)',
+  			'4xl': '2rem',
+  		},
+  		fontFamily: {
+  			sans: 'var(--font-inter)',
+  		},
+  		letterSpacing: {
+  			widest: '0.2em',
   		},
   		colors: {
-  			background: 'hsl(var(--background))',
-  			foreground: 'hsl(var(--foreground))',
+  			background: '#000000',
+  			foreground: '#ffffff',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -71,10 +79,13 @@ const config: Config = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
-  		}
+  			},
+  		},
+  		backdropBlur: {
+  			xs: '2px',
+  		},
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [],
 };
 export default config;
