@@ -45,7 +45,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/50" />
         </div>
 
-        {/* Navigation */}
+      {/* Navigation */}
         <nav className="relative flex items-center justify-between px-8 py-4 z-20">
           <Link href="/" className="flex items-center -ml-2">
             <Image
@@ -108,7 +108,7 @@ export default function Home() {
               className="text-lg text-white/80 hover:text-white transition-colors"
             >
               About Us
-            </Link>
+        </Link>
             <button 
               className="bg-white/90 hover:bg-white text-black px-5 py-2 rounded-lg transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -131,35 +131,56 @@ export default function Home() {
             <p className="text-lg text-white/60 mb-8 max-w-2xl mx-auto">
               Streamline your NBFC operations with our comprehensive software suite. Enhanced security, compliance, and efficiency—all in one platform.
             </p>
-            <div className="flex items-center justify-center">
-              <button className="bg-black/40 hover:bg-black/60 text-white/80 px-6 py-2.5 rounded-lg transition-colors border border-white/10 backdrop-blur-sm">
-                Learn More
+            <div className="flex flex-col items-center space-y-4">
+              <div className="flex flex-col items-center justify-center w-full max-w-xs space-y-4">
+                <button className="bg-black/40 hover:bg-black/60 text-white/80 px-6 py-2.5 rounded-lg transition-colors border border-white/10 backdrop-blur-sm w-full">
+                  Learn More
+                </button>
+                <div className="w-full sm:hidden flex flex-col items-center space-y-4">
+                  <button 
+                    onClick={scrollToFeatures}
+                    className="bg-black/20 backdrop-blur-md rounded-full px-6 py-2.5 border border-white/5 hover:bg-black/30 transition-colors cursor-pointer w-full"
+                  >
+                    <span className="flex items-center justify-center text-sm text-white/60">
+                      <svg className="w-4 h-4 mr-2 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                      </svg>
+                      Explore Features
+                    </span>
+                  </button>
+                  <button className="bg-black/20 backdrop-blur-md rounded-full px-6 py-2.5 border border-white/5 hover:bg-black/30 transition-colors cursor-pointer w-full">
+                    <span className="text-sm text-white/40">Fintech Innovation</span>
+                    <div className="w-16 h-px bg-white/20 mt-2 mx-auto"></div>
+                  </button>
+                </div>
+                      </div>
+                    </div>
+                      </div>
+
+          {/* Bottom Section - Only visible on larger screens */}
+          <div className="absolute bottom-8 left-0 right-0 px-8 hidden sm:block">
+            <div className="flex items-center justify-between max-w-4xl mx-auto">
+              <button 
+                onClick={scrollToFeatures}
+                className="bg-black/20 backdrop-blur-md rounded-full px-4 py-2 border border-white/5 hover:bg-black/30 transition-colors cursor-pointer"
+              >
+                <span className="flex items-center text-sm text-white/60">
+                  <svg className="w-4 h-4 mr-2 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                          </svg>
+                  Explore Features
+                </span>
               </button>
+              <div className="text-right">
+                <span className="text-sm text-white/40">Fintech Innovation</span>
+                <div className="w-8 h-px bg-white/20 mt-2 ml-auto"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Bottom Section */}
-          <div className="absolute bottom-8 left-8">
-            <button 
-              onClick={scrollToFeatures}
-              className="bg-black/20 backdrop-blur-md rounded-full px-4 py-2 border border-white/5 hover:bg-black/30 transition-colors cursor-pointer"
-            >
-              <span className="flex items-center text-sm text-white/60">
-                <svg className="w-4 h-4 mr-2 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-                Explore Features
-              </span>
-            </button>
-          </div>
-          <div className="absolute bottom-8 right-8">
-            <span className="text-sm text-white/40">Fintech Innovation</span>
-            <div className="w-8 h-px bg-white/20 mt-2"></div>
-          </div>
-        </div>
-      </div>
-
-      {/* Features Section */}
+        {/* Features Section */}
       <div ref={featuresRef} id="features" className="w-full min-h-screen max-w-[1400px] mx-auto px-8 pt-24 pb-12">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-light mb-12 text-center text-white">
@@ -171,8 +192,8 @@ export default function Home() {
                 <div className="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
+                    </svg>
+                  </div>
                 <h3 className="text-xl text-white/90 font-medium mb-2">Enhanced Security</h3>
                 <p className="text-white/60">State-of-the-art security measures to protect your financial data and transactions.</p>
               </div>
@@ -189,7 +210,7 @@ export default function Home() {
                 <div className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
+                    </svg>
                 </div>
                 <h3 className="text-xl text-white/90 font-medium mb-2">Process Optimization</h3>
                 <p className="text-white/60">Streamlined workflows and automated processes for maximum efficiency.</p>
@@ -198,7 +219,7 @@ export default function Home() {
                 <div className="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                  </svg>
+                    </svg>
                 </div>
                 <h3 className="text-xl text-white/90 font-medium mb-2">Analytics & Insights</h3>
                 <p className="text-white/60">Advanced analytics and reporting tools for data-driven decision making.</p>
@@ -206,7 +227,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+            </div>
 
       {/* About Us Section */}
       <div ref={aboutRef} id="about" className="w-full min-h-screen max-w-[1400px] mx-auto px-8 pt-12 pb-24">
@@ -223,7 +244,7 @@ export default function Home() {
                 <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-purple-500/20 flex items-center justify-center">
                   <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                  </svg>
+                      </svg>
                 </div>
                 <h3 className="text-white/90 font-medium mb-2">Innovation</h3>
                 <p className="text-sm text-white/60">Pushing boundaries with creative solutions</p>
@@ -232,7 +253,7 @@ export default function Home() {
                 <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-blue-500/20 flex items-center justify-center">
                   <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
+                      </svg>
                 </div>
                 <h3 className="text-white/90 font-medium mb-2">Collaboration</h3>
                 <p className="text-sm text-white/60">Working together towards excellence</p>
@@ -241,7 +262,7 @@ export default function Home() {
                 <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-green-500/20 flex items-center justify-center">
                   <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                  </svg>
+                      </svg>
                 </div>
                 <h3 className="text-white/90 font-medium mb-2">Learning</h3>
                 <p className="text-sm text-white/60">Continuous growth and improvement</p>
@@ -250,6 +271,28 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <div className="w-full bg-black/40 backdrop-blur-sm">
+        <footer className="w-full max-w-[1400px] mx-auto px-8 py-8 border-t border-white/5">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex items-center space-x-2">
+              <Image
+                src="/flw.png"
+                alt="Finatic Labs"
+                width={32}
+                height={32}
+                className="opacity-90"
+              />
+              <span className="text-white/60 text-sm">© 2024 Finatic Labs. All rights reserved.</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <span className="text-sm text-white/60">Contact:</span>
+              <Link href="mailto:info@finaticlabs.com" className="text-sm text-white/60 hover:text-white transition-colors">info@finaticlabs.com</Link>
+            </div>
+          </div>
+        </footer>
+        </div>
     </div>
   )
 }
