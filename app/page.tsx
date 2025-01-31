@@ -36,9 +36,9 @@ export default function Home() {
               loop
               muted
               playsInline
-              className="w-full h-full object-cover opacity-50"
+              className="w-full h-full object-cover opacity-30"
             >
-              <source src="/new.mov" type="video/quicktime" />
+              <source src="/new.mp4" type="video/mp4" />
             </video>
           )}
           {/* Overlay gradient */}
@@ -46,14 +46,14 @@ export default function Home() {
         </div>
 
       {/* Navigation */}
-        <nav className="relative flex items-center justify-between px-8 py-4 z-20">
-          <Link href="/" className="flex items-center -ml-2">
+        <nav className="relative flex items-center justify-between px-4 sm:px-8 py-2 sm:py-4 z-20">
+          <Link href="/" className="flex items-center">
             <Image
               src="/logo.png"
               alt="Finatic Labs"
-              width={216}
-              height={216}
-              className="opacity-90"
+              width={150}
+              height={150}
+              className="opacity-90 w-[120px] sm:w-[216px]"
               priority
             />
           </Link>
@@ -119,16 +119,16 @@ export default function Home() {
         </nav>
 
         {/* Hero Section */}
-        <div className="relative h-[calc(100vh-5rem)] flex items-center justify-center px-8">
+        <div className="relative h-[calc(100vh-4rem)] flex items-center justify-center px-4 sm:px-8">
           {/* Central Content */}
-          <div className="text-center max-w-4xl z-10">
-            <div className="inline-flex items-center bg-black/20 backdrop-blur-md rounded-full px-4 py-2 border border-white/5 mb-8">
-              <span className="text-base text-white/80 font-bold scale-125">Launching Soon!</span>
+          <div className="text-center max-w-4xl z-10 mt-[-2rem] sm:mt-0">
+            <div className="inline-flex items-center bg-black/20 backdrop-blur-md rounded-full px-3 sm:px-4 py-1.5 sm:py-2 border border-white/5 mb-6 sm:mb-8">
+              <span className="text-sm sm:text-base text-white/80 font-bold scale-100 sm:scale-125">Launching Soon!</span>
             </div>
-            <h1 className="text-[64px] leading-tight font-light mb-4">
+            <h1 className="text-[32px] sm:text-[64px] leading-tight font-light mb-4">
               <span className="text-white/40">Intelligence Engineered for</span> Modern Finance
             </h1>
-            <p className="text-lg text-white/60 mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-white/60 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
               Streamline your NBFC operations with our comprehensive software suite. Enhanced security, compliance, and efficiency—all in one platform.
             </p>
             <div className="flex flex-col items-center space-y-4">
