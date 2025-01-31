@@ -33,7 +33,6 @@ export default function WaitlistPage() {
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)
-      // Reset status after 3 seconds
       setTimeout(() => setSubmitStatus('idle'), 3000)
     }
   }
@@ -53,6 +52,34 @@ export default function WaitlistPage() {
               priority
             />
           </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden sm:flex items-center space-x-8">
+            <Link href="/" className="text-sm text-white/80 hover:text-white transition-colors">
+              Home
+            </Link>
+            <Link href="/features" className="text-sm text-white/80 hover:text-white transition-colors">
+              Features
+            </Link>
+            <Link href="/#about" className="text-sm text-white/80 hover:text-white transition-colors">
+              About Us
+            </Link>
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="sm:hidden">
+            <div className="flex items-center space-x-4">
+              <Link href="/" className="text-sm text-white/80 hover:text-white transition-colors">
+                Home
+              </Link>
+              <Link href="/features" className="text-sm text-white/80 hover:text-white transition-colors">
+                Features
+              </Link>
+              <Link href="/#about" className="text-sm text-white/80 hover:text-white transition-colors">
+                About
+              </Link>
+            </div>
+          </div>
         </nav>
 
         {/* Form Section */}
