@@ -289,7 +289,7 @@ export default function Home() {
             <div className="flex items-center space-x-2">
               <span className="text-sm text-white/60">Contact:</span>
               <Link href="mailto:info@finaticlabs.com" className="text-sm text-white/60 hover:text-white transition-colors">info@finaticlabs.com</Link>
-            </div>
+          </div>
           </div>
         </footer>
         </div>
