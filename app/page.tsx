@@ -77,9 +77,9 @@ export default function Home() {
             <Link href="/" className="text-sm text-white/80 hover:text-white transition-colors">Home</Link>
             <Link href="/features" className="text-sm text-white/80 hover:text-white transition-colors">Features</Link>
             <Link href="#about" onClick={scrollToAbout} className="text-sm text-white/80 hover:text-white transition-colors">About Us</Link>
-            <button className="bg-white/90 hover:bg-white text-black px-5 py-2 rounded-lg transition-colors">
+            <Link href="/waitlist" className="bg-white/90 hover:bg-white text-black px-5 py-2 rounded-lg transition-colors">
               Join the Waitlist
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Navigation Menu */}
@@ -108,13 +108,14 @@ export default function Home() {
               className="text-lg text-white/80 hover:text-white transition-colors"
             >
               About Us
-        </Link>
-            <button 
+            </Link>
+            <Link 
+              href="/waitlist"
               className="bg-white/90 hover:bg-white text-black px-5 py-2 rounded-lg transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Join the Waitlist
-            </button>
+            </Link>
           </div>
         </nav>
 
@@ -133,9 +134,9 @@ export default function Home() {
             </p>
             <div className="flex flex-col items-center space-y-4">
               <div className="flex flex-col items-center justify-center w-full max-w-xs space-y-4">
-                <button className="bg-black/40 hover:bg-black/60 text-white/80 px-6 py-2.5 rounded-lg transition-colors border border-white/10 backdrop-blur-sm w-full">
+                <Link href="/waitlist" className="bg-black/40 hover:bg-black/60 text-white/80 px-6 py-2.5 rounded-lg transition-colors border border-white/10 backdrop-blur-sm w-full text-center">
                   Learn More
-                </button>
+                </Link>
                 <div className="w-full sm:hidden flex flex-col items-center space-y-4">
                   <button 
                     onClick={scrollToFeatures}
