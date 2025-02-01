@@ -41,14 +41,14 @@ export default function WaitlistPage() {
     <div className="min-h-screen bg-black">
       <div className="relative w-full min-h-screen max-w-[1400px] mx-auto">
         {/* Navigation */}
-        <nav className="relative flex items-center justify-between px-4 sm:px-8 py-4">
+        <nav className="relative flex items-center justify-between px-4 sm:px-8 py-2 sm:py-3">
           <Link href="/" className="flex items-center">
             <Image
               src="/logo.png"
               alt="Finatic Labs"
               width={150}
               height={150}
-              className="opacity-90 w-[120px] sm:w-[216px]"
+              className="opacity-90 w-[100px] sm:w-[120px] md:w-[216px]"
               priority
             />
           </Link>
@@ -83,13 +83,13 @@ export default function WaitlistPage() {
         </nav>
 
         {/* Form Section */}
-        <div className="flex items-center justify-center px-4 py-12">
-          <div className="w-full max-w-[600px] bg-black/40 backdrop-blur-sm rounded-2xl border border-white/5 p-8">
-            <h1 className="text-3xl font-light text-white mb-8">Join the Waitlist</h1>
+        <div className="flex items-center justify-center px-4 py-4 sm:py-8">
+          <div className="w-full max-w-[600px] bg-black/40 backdrop-blur-sm rounded-2xl border border-white/5 p-4 sm:p-8">
+            <h1 className="text-2xl sm:text-3xl font-light text-white mb-4 sm:mb-8">Join the Waitlist</h1>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm text-white/80 mb-2">
+                <label htmlFor="name" className="block text-sm text-white/80 mb-1 sm:mb-2">
                   Name <span className="text-white/60">*</span>
                 </label>
                 <input
@@ -98,13 +98,13 @@ export default function WaitlistPage() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                  className="w-full px-4 py-2 bg-black/40 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-white/20"
+                  className="w-full px-3 sm:px-4 py-1.5 sm:py-2 bg-black/40 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-white/20"
                   placeholder="Lee Robinson"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm text-white/80 mb-2">
+                <label htmlFor="email" className="block text-sm text-white/80 mb-1 sm:mb-2">
                   Email <span className="text-white/60">*</span>
                 </label>
                 <input
@@ -113,13 +113,13 @@ export default function WaitlistPage() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                  className="w-full px-4 py-2 bg-black/40 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-white/20"
+                  className="w-full px-3 sm:px-4 py-1.5 sm:py-2 bg-black/40 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-white/20"
                   placeholder="leerob@finaticlabs.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm text-white/80 mb-2">
+                <label htmlFor="message" className="block text-sm text-white/80 mb-1 sm:mb-2">
                   Tell us about yourself <span className="text-white/60">*</span>
                 </label>
                 <textarea
@@ -127,8 +127,8 @@ export default function WaitlistPage() {
                   required
                   value={formData.message}
                   onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
-                  rows={4}
-                  className="w-full px-4 py-2 bg-black/40 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-white/20 resize-none"
+                  rows={3}
+                  className="w-full px-3 sm:px-4 py-1.5 sm:py-2 bg-black/40 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-white/20 resize-none"
                   placeholder="Type your message here..."
                 />
               </div>
@@ -136,7 +136,7 @@ export default function WaitlistPage() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-auto px-6 py-2 bg-white/90 hover:bg-white text-black rounded-lg transition-colors ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
+                className={`w-auto px-4 sm:px-6 py-1.5 sm:py-2 bg-white/90 hover:bg-white text-black rounded-lg transition-colors ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>

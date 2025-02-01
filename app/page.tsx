@@ -46,14 +46,14 @@ export default function Home() {
         </div>
 
       {/* Navigation */}
-        <nav className="relative flex items-center justify-between px-4 sm:px-8 py-2 sm:py-4 z-20">
+        <nav className="relative flex items-center justify-between px-4 sm:px-8 py-2 sm:py-3 z-20">
           <Link href="/" className="flex items-center">
             <Image
               src="/logo.png"
               alt="Finatic Labs"
               width={150}
               height={150}
-              className="opacity-90 w-[120px] sm:w-[216px]"
+              className="opacity-90 w-[100px] sm:w-[120px] md:w-[216px]"
               priority
             />
           </Link>
@@ -120,20 +120,20 @@ export default function Home() {
         </nav>
 
         {/* Hero Section */}
-        <div className="relative h-[calc(100vh-4rem)] flex items-center justify-center px-4 sm:px-8">
+        <div className="relative min-h-[400px] h-[calc(100vh-3rem)] flex items-center justify-center px-4 sm:px-8">
           {/* Central Content */}
-          <div className="text-center max-w-4xl z-10 mt-[-2rem] sm:mt-0">
-            <div className="inline-flex items-center bg-black/20 backdrop-blur-md rounded-full px-3 sm:px-4 py-1.5 sm:py-2 border border-white/5 mb-6 sm:mb-8">
-              <span className="text-sm sm:text-base text-white/80 font-bold scale-100 sm:scale-125">Launching Soon!</span>
+          <div className="text-center max-w-4xl z-10 mt-[-1rem] sm:mt-0">
+            <div className="inline-flex items-center bg-black/20 backdrop-blur-md rounded-full px-2 sm:px-4 py-1 sm:py-2 border border-white/5 mb-4 sm:mb-6">
+              <span className="text-sm sm:text-base text-white/80 font-bold">Launching Soon!</span>
             </div>
-            <h1 className="text-[32px] sm:text-[64px] leading-tight font-light mb-4">
+            <h1 className="text-[28px] sm:text-[48px] md:text-[64px] leading-tight font-light mb-3 sm:mb-4">
               <span className="text-white/40">Intelligence Engineered for</span> Modern Finance
             </h1>
-            <p className="text-base sm:text-lg text-white/60 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
+            <p className="text-sm sm:text-base md:text-lg text-white/60 mb-4 sm:mb-6 max-w-2xl mx-auto px-2">
               Streamline your NBFC operations with our comprehensive software suite. Enhanced security, compliance, and efficiency—all in one platform.
             </p>
-            <div className="flex flex-col items-center space-y-4">
-              <div className="flex flex-col items-center justify-center w-full max-w-xs space-y-4">
+            <div className="flex flex-col items-center space-y-3 sm:space-y-4">
+              <div className="flex flex-col items-center justify-center w-full max-w-xs space-y-3 sm:space-y-4">
                 <Link href="/waitlist" className="bg-black/40 hover:bg-black/60 text-white/80 px-6 py-2.5 rounded-lg transition-colors border border-white/10 backdrop-blur-sm w-full text-center">
                   Learn More
                 </Link>
