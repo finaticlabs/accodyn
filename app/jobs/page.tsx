@@ -66,17 +66,21 @@ export default function JobsPage() {
 
   return (
     <div className="min-h-screen bg-black">
-      <div className="relative w-full min-h-screen max-w-[1400px] mx-auto">
+      <div className="relative w-full min-h-screen max-w-[1400px] mx-auto rounded-[32px] overflow-hidden">
+        {/* Background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/50" />
+
         {/* Navigation */}
-        <nav className="relative flex items-center justify-between px-4 sm:px-8 py-2 sm:py-3">
+        <nav className="relative flex items-center justify-between px-4 sm:px-8 py-2 sm:py-3 z-10">
           <Link href="/" className="flex items-center">
             <Image
-              src="/logo.png"
+              src="/logo-circle.svg"
               alt="Finatic Labs"
-              width={150}
-              height={150}
-              className="opacity-90 w-[100px] sm:w-[120px] md:w-[216px]"
+              width={48}
+              height={48}
+              className="opacity-90"
               priority
+              unoptimized
             />
           </Link>
 
@@ -99,7 +103,7 @@ export default function JobsPage() {
             <Link href="/" className="text-sm text-white/80 hover:text-white transition-colors">Home</Link>
             <Link href="/features" className="text-sm text-white/80 hover:text-white transition-colors">Features</Link>
             <Link href="/#about" className="text-sm text-white/80 hover:text-white transition-colors">About Us</Link>
-            <Link href="/jobs" className="text-sm text-white/80 hover:text-white transition-colors">Jobs</Link>
+            <Link href="/jobs" className="text-sm text-white/80 hover:text-white transition-colors font-medium">Jobs</Link>
             <Link href="/waitlist" className="bg-white/90 hover:bg-white text-black px-5 py-2 rounded-lg transition-colors">
               Join the Waitlist
             </Link>
@@ -134,7 +138,7 @@ export default function JobsPage() {
             </Link>
             <Link 
               href="/jobs" 
-              className="text-lg text-white/80 hover:text-white transition-colors"
+              className="text-lg text-white/80 hover:text-white transition-colors font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Jobs
@@ -161,9 +165,11 @@ export default function JobsPage() {
                     <Image
                       src="/logo-circle.svg"
                       alt="Finatic Labs"
-                      width={48}
-                      height={48}
+                      width={32}
+                      height={32}
                       className="opacity-90"
+                      priority
+                      unoptimized
                     />
                   </div>
                   <span className="text-sm text-white/80 px-3 py-1 rounded-full border border-white/10">

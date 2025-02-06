@@ -73,10 +73,11 @@ export default function Home() {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6">
             <Link href="/" className="text-sm text-white/80 hover:text-white transition-colors">Home</Link>
             <Link href="/features" className="text-sm text-white/80 hover:text-white transition-colors">Features</Link>
             <Link href="#about" onClick={scrollToAbout} className="text-sm text-white/80 hover:text-white transition-colors">About Us</Link>
+            <Link href="/jobs" className="text-sm text-white/80 hover:text-white transition-colors font-medium">Jobs</Link>
             <Link href="/waitlist" className="bg-white/90 hover:bg-white text-black px-5 py-2 rounded-lg transition-colors">
               Join the Waitlist
             </Link>
@@ -85,7 +86,7 @@ export default function Home() {
           {/* Mobile Navigation Menu */}
           <div className={`
             fixed inset-0 bg-black/95 backdrop-blur-lg z-10 lg:hidden
-            flex flex-col items-center justify-center space-y-8 transition-transform duration-300
+            flex flex-col items-center justify-center space-y-6 transition-transform duration-300
             ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}
           `}>
             <Link 
@@ -108,6 +109,13 @@ export default function Home() {
               className="text-lg text-white/80 hover:text-white transition-colors"
             >
               About Us
+            </Link>
+            <Link 
+              href="/jobs" 
+              className="text-lg text-white/80 hover:text-white transition-colors font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Jobs
             </Link>
             <Link 
               href="/waitlist"
