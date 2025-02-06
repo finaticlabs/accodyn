@@ -74,13 +74,12 @@ export default function JobsPage() {
         <nav className="relative flex items-center justify-between px-4 sm:px-8 py-2 sm:py-3 z-10">
           <Link href="/" className="flex items-center">
             <Image
-              src="/logo-circle.svg"
+              src="/logo.png"
               alt="Finatic Labs"
-              width={48}
-              height={48}
-              className="opacity-90"
+              width={150}
+              height={150}
+              className="opacity-90 w-[100px] sm:w-[120px] md:w-[216px]"
               priority
-              unoptimized
             />
           </Link>
 
@@ -163,7 +162,7 @@ export default function JobsPage() {
                 <div className="flex items-center justify-between mb-4">
                   <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center border border-white/5">
                     <Image
-                      src="/logo-circle.svg"
+                      src="/favicon.svg"
                       alt="Finatic Labs"
                       width={32}
                       height={32}
