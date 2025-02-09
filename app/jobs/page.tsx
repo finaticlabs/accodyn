@@ -146,7 +146,7 @@ export default function JobsPage() {
                   jobs@finaticlabs.com
                 </Link>
               </div>
-              <p className="text-xs text-white/40 italic">Please include the position you're applying for in the subject line</p>
+              <p className="text-xs text-white/40 italic">Please include the position you&apos;re applying for in the subject line</p>
             </div>
           </div>
         </footer>

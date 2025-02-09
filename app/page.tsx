@@ -23,13 +23,14 @@ export default function Home() {
       }
     )
 
-    if (aboutRef.current) {
-      observer.observe(aboutRef.current)
+    const currentRef = aboutRef.current
+    if (currentRef) {
+      observer.observe(currentRef)
     }
 
     return () => {
-      if (aboutRef.current) {
-        observer.unobserve(aboutRef.current)
+      if (currentRef) {
+        observer.unobserve(currentRef)
       }
     }
   }, [])
@@ -80,8 +81,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+                  </div>
+                </div>
 
       {/* About Us Section */}
       <div ref={aboutRef} id="about" className="w-full min-h-screen max-w-[1400px] mx-auto px-8 pt-12 pb-24">
@@ -98,7 +99,7 @@ export default function Home() {
                 <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-purple-500/20 flex items-center justify-center">
                   <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                  </svg>
+                    </svg>
                 </div>
                 <h3 className="text-white/90 font-medium mb-2">Innovation</h3>
                 <p className="text-sm text-white/60">Pushing boundaries with creative solutions</p>
@@ -107,7 +108,7 @@ export default function Home() {
                 <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-blue-500/20 flex items-center justify-center">
                   <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
+                      </svg>
                 </div>
                 <h3 className="text-white/90 font-medium mb-2">Collaboration</h3>
                 <p className="text-sm text-white/60">Working together towards excellence</p>
@@ -116,7 +117,7 @@ export default function Home() {
                 <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-green-500/20 flex items-center justify-center">
                   <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                  </svg>
+                      </svg>
                 </div>
                 <h3 className="text-white/90 font-medium mb-2">Learning</h3>
                 <p className="text-sm text-white/60">Continuous growth and improvement</p>
@@ -150,10 +151,10 @@ export default function Home() {
               >
                 info@finaticlabs.com
               </Link>
-            </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
+    </div>
     </main>
   )
 }
