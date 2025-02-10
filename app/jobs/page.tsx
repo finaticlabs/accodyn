@@ -58,6 +58,15 @@ export default function JobsPage() {
       workMode: 'On-line',
       stipend: 'Unpaid',
       downloadLink: 'https://drive.google.com/uc?export=download&id=1UPDWwBFDVXAJmVHo7BaN7BsZ386gsSv1'
+    },
+    {
+      title: 'HR Intern',
+      category: 'Human Resources',
+      domain: 'Human Resources (HR), Talent Acquisition, Recruitment, Employee Engagement, HR Operations, and Policy Development',
+      type: 'Intern',
+      workMode: 'On-line',
+      stipend: 'Unpaid',
+      downloadLink: 'https://drive.google.com/uc?export=download&id=1UQAJ3ODgLpaROdaTqci5Cn1qx0StTQum'
     }
   ]
 
