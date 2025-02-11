@@ -140,7 +140,7 @@ export default function Home() {
                 className="opacity-90"
               />
               <span className="text-white/60 text-sm">© 2024 Finatic Labs. All rights reserved.</span>
-            </div>
+          </div>
             <div className="flex items-center space-x-2">
               <span className="text-sm text-white/60">Contact:</span>
               <Link 
