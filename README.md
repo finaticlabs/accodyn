@@ -4,7 +4,14 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.0 (Latest)
+### Version 2.0.1 (Latest)
+- Added XML sitemap for improved SEO:
+  - Included all major routes with priorities
+  - Set appropriate change frequencies
+  - Added lastmod dates
+  - Located at /public/sitemap.xml
+
+### Version 2.0
 - Added EMI Calculator tool with the following features:
   - Loan amount input with preset buttons (1L to 1Cr)
   - Interest rate slider (0-40%)
