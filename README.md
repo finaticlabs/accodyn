@@ -4,7 +4,13 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.0.1 (Latest)
+### Version 2.0.2 (Latest)
+- Added robots.txt for improved search engine crawling:
+  - Set global crawl permissions
+  - Added sitemap reference
+  - Located at /public/robots.txt
+
+### Version 2.0.1
 - Added XML sitemap for improved SEO:
   - Included all major routes with priorities
   - Set appropriate change frequencies
