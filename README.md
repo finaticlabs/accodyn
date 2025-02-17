@@ -4,7 +4,14 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.0.2 (Latest)
+### Version 2.0.3 (Latest)
+- Fixed SEO redirect issues:
+  - Added middleware for consistent domain handling
+  - Implemented 301 redirects from www to non-www
+  - Improved URL canonicalization
+  - Fixed Google Search Console indexing issues
+
+### Version 2.0.2
 - Added robots.txt for improved search engine crawling:
   - Set global crawl permissions
   - Added sitemap reference
