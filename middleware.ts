@@ -17,10 +17,25 @@ const KNOWN_BOTS = [
   'DuckDuckBot',
 ]
 
+// List of paths that should bypass middleware
+const BYPASS_PATHS = [
+  '/robots.txt',
+  '/sitemap.xml',
+  '/_next',
+  '/favicon.ico',
+  '/public',
+]
+
 export function middleware(request: NextRequest) {
-  // Early return for robots.txt and sitemap.xml
   const pathname = request.nextUrl.pathname
-  if (pathname === '/robots.txt' || pathname === '/sitemap.xml') {
+
+  // Check if the path should bypass middleware
+  if (BYPASS_PATHS.some(path => pathname.startsWith(path))) {
+    return NextResponse.next()
+  }
+
+  // Check if the request is for a static file
+  if (pathname.match(/\.(jpg|jpeg|gif|png|webp|svg|css|js|mp4)$/i)) {
     return NextResponse.next()
   }
 
@@ -90,7 +105,7 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Skip all static files
+    // Match all paths except static files
     '/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(png|jpg|jpeg|svg|gif|webp|js|css|mp4)).*)',
   ],
 } 
