@@ -1,3 +1,12 @@
+# Allow all search engines
+User-agent: *
+Allow: /
+Disallow: /404
+Disallow: /500
+Disallow: /admin
+Disallow: /_next/*
+Disallow: /api/*
+
 # Google Search Engine Robot
 User-agent: Googlebot
 Allow: /
@@ -5,9 +14,18 @@ Allow: /features
 Allow: /tools
 Allow: /jobs
 Allow: /waitlist
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.ico$
 Disallow: /404
 Disallow: /500
 Disallow: /admin
+Disallow: /_next/*
+Disallow: /api/*
 
 # Google Image Robot
 User-agent: Googlebot-Image
@@ -17,17 +35,20 @@ Allow: /*.jpeg$
 Allow: /*.gif$
 Allow: /*.png$
 Allow: /*.webp$
+Allow: /*.svg$
+Disallow: /_next/*
 
 # Bing Bot
 User-agent: Bingbot
 Allow: /
-
-# All other robots
-User-agent: *
-Allow: /
 Disallow: /404
 Disallow: /500
 Disallow: /admin
+Disallow: /_next/*
+Disallow: /api/*
 
-# Sitemap location
+# Host
+Host: https://finaticlabs.com
+
+# Sitemap
 Sitemap: https://finaticlabs.com/sitemap.xml 

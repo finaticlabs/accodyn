@@ -18,6 +18,12 @@ const KNOWN_BOTS = [
 ]
 
 export function middleware(request: NextRequest) {
+  // Early return for robots.txt and sitemap.xml
+  const pathname = request.nextUrl.pathname
+  if (pathname === '/robots.txt' || pathname === '/sitemap.xml') {
+    return NextResponse.next()
+  }
+
   const response = NextResponse.next()
   
   // Check if the request is from a known bot
@@ -56,7 +62,6 @@ export function middleware(request: NextRequest) {
 
   // Get hostname (e.g. finaticlabs.com, www.finaticlabs.com, etc.)
   const hostname = request.headers.get('host') || ''
-  const protocol = request.headers.get('x-forwarded-proto') || 'http'
   const url = new URL(request.url)
 
   // Only handle www to non-www redirect for production domain
@@ -85,16 +90,7 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     * - robots.txt (SEO)
-     * - sitemap.xml (SEO)
-     * - public files (public folder)
-     * - api routes
-     */
-    '/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\..*|api).*)',
+    // Skip all static files
+    '/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(png|jpg|jpeg|svg|gif|webp|js|css|mp4)).*)',
   ],
 } 
