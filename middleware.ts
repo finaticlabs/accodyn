@@ -38,10 +38,12 @@ export function middleware(request: NextRequest) {
 
   // Get hostname (e.g. finaticlabs.com, www.finaticlabs.com, etc.)
   const hostname = request.headers.get('host') || ''
+  const protocol = request.headers.get('x-forwarded-proto') || 'http'
+  const url = new URL(request.url)
 
-  // If www, redirect to non-www
-  if (hostname.startsWith('www.')) {
-    const newUrl = `https://${hostname.replace('www.', '')}${request.nextUrl.pathname}${request.nextUrl.search}`
+  // Only handle www to non-www redirect for production domain
+  if (hostname.startsWith('www.finaticlabs.com')) {
+    const newUrl = `https://finaticlabs.com${url.pathname}${url.search}`
     return NextResponse.redirect(newUrl, 301)
   }
 
@@ -54,10 +56,10 @@ export function middleware(request: NextRequest) {
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin')
   response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()')
 
-  // Add CSP header
+  // Add CSP header with more permissive settings for Vercel deployment
   response.headers.set(
     'Content-Security-Policy',
-    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;"
+    "default-src 'self' vercel.app *.vercel.app; script-src 'self' 'unsafe-inline' 'unsafe-eval' vercel.app *.vercel.app; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self' data:; connect-src 'self' *.vercel.app;"
   )
 
   return response

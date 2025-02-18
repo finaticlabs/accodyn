@@ -4,7 +4,16 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.1.0 (Latest)
+### Version 2.1.1 (Latest)
+- Fixed critical redirect and deployment issues:
+  - Resolved infinite redirect loop on Vercel deployment
+  - Updated CSP headers for Vercel compatibility
+  - Improved www to non-www redirect logic
+  - Fixed hostname handling in middleware
+  - Added protocol and URL parsing safety checks
+  - Optimized security headers for production
+
+### Version 2.1.0
 - Enhanced security measures to prevent DDoS attacks:
   - Implemented rate limiting (100 requests per minute per IP)
   - Added security headers (HSTS, CSP, XSS Protection)
