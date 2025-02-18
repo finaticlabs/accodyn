@@ -27,6 +27,26 @@ Disallow: /admin
 Disallow: /_next/*
 Disallow: /api/*
 
+# Google Smartphone Robot
+User-agent: Googlebot-smartphone
+Allow: /
+Allow: /features
+Allow: /tools
+Allow: /jobs
+Allow: /waitlist
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.ico$
+Disallow: /404
+Disallow: /500
+Disallow: /admin
+Disallow: /_next/*
+Disallow: /api/*
+
 # Google Image Robot
 User-agent: Googlebot-Image
 Allow: /
