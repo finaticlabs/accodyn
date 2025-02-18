@@ -4,7 +4,17 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.0.3 (Latest)
+### Version 2.1.0 (Latest)
+- Enhanced security measures to prevent DDoS attacks:
+  - Implemented rate limiting (100 requests per minute per IP)
+  - Added security headers (HSTS, CSP, XSS Protection)
+  - Improved request filtering and validation
+  - Added DDoS protection layer
+  - Implemented retry-after mechanism for rate-limited requests
+  - Added Content Security Policy (CSP) headers
+  - Enhanced cross-origin security policies
+
+### Version 2.0.3
 - Fixed SEO redirect issues:
   - Added middleware for consistent domain handling
   - Implemented 301 redirects from www to non-www
