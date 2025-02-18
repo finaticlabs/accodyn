@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 export default function EMICalculatorPage() {
   const [loanAmount, setLoanAmount] = useState(500000)
@@ -24,7 +24,7 @@ export default function EMICalculatorPage() {
     { label: '1Cr', value: 10000000 },
   ]
 
-  const calculateEMI = () => {
+  const calculateEMI = useCallback(() => {
     const principal = loanAmount
     const ratePerMonth = (interestRate / 12) / 100
     const months = durationType === 'Years' ? loanTerm * 12 : loanTerm
@@ -36,11 +36,11 @@ export default function EMICalculatorPage() {
     setEMI(isNaN(emiAmount) ? 0 : emiAmount)
     setTotalInterest(isNaN(totalInterestPayment) ? 0 : totalInterestPayment)
     setTotalAmount(isNaN(totalPayment) ? principal : totalPayment)
-  }
+  }, [loanAmount, interestRate, loanTerm, durationType])
 
   useEffect(() => {
     calculateEMI()
-  }, [loanAmount, interestRate, loanTerm, durationType])
+  }, [calculateEMI])
 
   useEffect(() => {
     setTermInputValue(loanTerm.toString())

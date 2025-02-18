@@ -4,11 +4,11 @@ const nextConfig = {
     return [
       {
         source: '/robots.txt',
-        destination: '/public/robots.txt',
+        destination: '/robots.txt',
       },
       {
         source: '/sitemap.xml',
-        destination: '/public/sitemap.xml',
+        destination: '/sitemap.xml',
       },
     ]
   },
