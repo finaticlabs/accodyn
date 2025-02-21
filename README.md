@@ -4,7 +4,22 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.1.1 (Latest)
+### Version 2.1.2 (Latest)
+- Enhanced EMI Calculator functionality:
+  - Added amortization table feature for loan terms up to 3 years
+  - Improved table layout with monthly breakdowns
+  - Added principal and interest distribution per installment
+  - Enhanced mobile responsiveness for table view
+- Improved footer and social integration:
+  - Added LinkedIn social media link
+  - Updated copyright year to 2025
+  - Enhanced footer layout and responsiveness
+- Technical improvements:
+  - Improved hydration handling for development environment
+  - Enhanced VS Code integration management
+  - Optimized client-side rendering consistency
+
+### Version 2.1.1
 - Fixed critical redirect and deployment issues:
   - Resolved infinite redirect loop on Vercel deployment
   - Updated CSP headers for Vercel compatibility
