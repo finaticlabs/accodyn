@@ -48,7 +48,9 @@ export function middleware(request: NextRequest) {
   // Skip rate limiting and some security headers for known bots
   if (!isBot) {
     // Get the client's IP address
-    const ip = request.ip || 'unknown'
+    const ip = request.headers.get('x-real-ip') || 
+               request.headers.get('x-forwarded-for')?.split(',')[0] || 
+               'unknown'
     
     // Basic Rate Limiting
     const now = Date.now()

@@ -9,7 +9,7 @@ const nextConfig = {
       {
         source: '/sitemap.xml',
         destination: '/sitemap.xml',
-      },
+      }
     ]
   },
 };

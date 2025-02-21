@@ -81,8 +81,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-                  </div>
-                </div>
+        </div>
+      </div>
 
       {/* About Us Section */}
       <div ref={aboutRef} id="about" className="w-full min-h-screen max-w-[1400px] mx-auto px-8 pt-12 pb-24">
@@ -99,7 +99,7 @@ export default function Home() {
                 <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-purple-500/20 flex items-center justify-center">
                   <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                    </svg>
+                  </svg>
                 </div>
                 <h3 className="text-white/90 font-medium mb-2">Innovation</h3>
                 <p className="text-sm text-white/60">Pushing boundaries with creative solutions</p>
@@ -108,7 +108,7 @@ export default function Home() {
                 <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-blue-500/20 flex items-center justify-center">
                   <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                      </svg>
+                  </svg>
                 </div>
                 <h3 className="text-white/90 font-medium mb-2">Collaboration</h3>
                 <p className="text-sm text-white/60">Working together towards excellence</p>
@@ -117,7 +117,7 @@ export default function Home() {
                 <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-green-500/20 flex items-center justify-center">
                   <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                      </svg>
+                  </svg>
                 </div>
                 <h3 className="text-white/90 font-medium mb-2">Learning</h3>
                 <p className="text-sm text-white/60">Continuous growth and improvement</p>
@@ -139,8 +139,8 @@ export default function Home() {
                 height={32}
                 className="opacity-90"
               />
-              <span className="text-white/60 text-sm">© 2024 Finatic Labs. All rights reserved.</span>
-          </div>
+              <span className="text-white/60 text-sm">© 2025 Finatic Labs. All rights reserved.</span>
+            </div>
             <div className="flex items-center space-x-2">
               <span className="text-sm text-white/60">Contact:</span>
               <Link 
@@ -151,10 +151,21 @@ export default function Home() {
               >
                 info@finaticlabs.com
               </Link>
+              <span className="text-white/60">|</span>
+              <Link
+                href="https://www.linkedin.com/company/finatic-labs/posts/?feedView=all"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white transition-colors"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </Link>
+            </div>
           </div>
-        </div>
-      </footer>
-    </div>
+        </footer>
+      </div>
     </main>
   )
 }
