@@ -15,6 +15,8 @@ export default function EMICalculatorPage() {
   const [totalAmount, setTotalAmount] = useState<number>(0)
   const [termInputValue, setTermInputValue] = useState<string>('36')
   const [showAmortizationTable, setShowAmortizationTable] = useState(false)
+  const [amortizationRef, setAmortizationRef] = useState<HTMLDivElement | null>(null)
+  const [showTenureWarning, setShowTenureWarning] = useState(false)
   const [amortizationSchedule, setAmortizationSchedule] = useState<Array<{
     month: number,
     emi: number,
@@ -149,26 +151,49 @@ export default function EMICalculatorPage() {
   const handleDurationTypeChange = (type: 'Months' | 'Years') => {
     if (type === durationType) return;
     
+    let newTerm: number;
     if (type === 'Years') {
       const years = Math.round(loanTerm / 12);
-      const newTerm = Math.max(1, Math.min(30, years));
-      setLoanTerm(newTerm);
-      setTermInputValue(newTerm.toString());
+      newTerm = Math.max(1, Math.min(30, years));
     } else {
-      const months = loanTerm * 12;
-      setLoanTerm(months);
-      setTermInputValue(months.toString());
+      newTerm = Math.min(360, loanTerm * 12);
     }
+    
+    setLoanTerm(newTerm);
+    setTermInputValue(newTerm.toString());
     setDurationType(type);
+
+    // Check tenure warning after type change
+    const totalMonths = type === 'Years' ? newTerm * 12 : newTerm;
+    if (totalMonths > 36) {
+      setShowTenureWarning(true);
+      setShowAmortizationTable(false);
+    } else {
+      setShowTenureWarning(false);
+    }
   }
 
   const handleViewAmortizationTable = () => {
     const totalMonths = durationType === 'Years' ? loanTerm * 12 : loanTerm
     if (totalMonths > 36) {
-      alert('Amortization table can only be viewed for loan terms up to 3 years')
+      setShowTenureWarning(true)
+      setShowAmortizationTable(false)
       return
     }
+    setShowTenureWarning(false)
     setShowAmortizationTable(!showAmortizationTable)
+    if (!showAmortizationTable) {
+      // Wait for state update and DOM render
+      setTimeout(() => {
+        const amortizationElement = document.getElementById('amortizationTable')
+        if (amortizationElement) {
+          amortizationElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start' 
+          })
+        }
+      }, 100)
+    }
   }
 
   return (
@@ -334,9 +359,17 @@ export default function EMICalculatorPage() {
                   step={durationType === 'Years' ? '0.5' : '12'}
                   value={loanTerm}
                   onChange={(e) => {
-                    const newValue = Number(e.target.value);
-                    setLoanTerm(newValue);
-                    setTermInputValue(newValue.toString());
+                    const newValue = Number(e.target.value)
+                    setLoanTerm(newValue)
+                    setTermInputValue(newValue.toString())
+                    // Check tenure warning on slider change
+                    const totalMonths = durationType === 'Years' ? newValue * 12 : newValue
+                    if (totalMonths > 36) {
+                      setShowTenureWarning(true)
+                      setShowAmortizationTable(false)
+                    } else {
+                      setShowTenureWarning(false)
+                    }
                   }}
                   className="w-full h-2 bg-white/10 rounded-lg appearance-none cursor-pointer"
                 />
@@ -348,19 +381,27 @@ export default function EMICalculatorPage() {
             </div>
 
             {/* Amortization Table Button */}
-            <div className="mt-8 flex justify-center">
+            <div className="mt-8 flex flex-col items-center space-y-3">
               <button
                 onClick={handleViewAmortizationTable}
                 className="bg-white/10 hover:bg-white/20 text-white px-6 py-2 rounded-lg transition-colors border border-white/10"
               >
                 {showAmortizationTable ? 'Hide' : 'View'} Amortization Table
               </button>
+              {showTenureWarning && (
+                <div className="text-red-400 text-sm text-center animate-fade-in">
+                  Amortization table can only be viewed for loan terms up to 36 months or 3 years
+                </div>
+              )}
             </div>
           </div>
 
           {/* Amortization Table */}
           {showAmortizationTable && (
-            <div className="w-full bg-black/40 backdrop-blur-sm rounded-2xl border border-white/5 p-6 sm:p-8">
+            <div 
+              id="amortizationTable"
+              className="w-full bg-black/40 backdrop-blur-sm rounded-2xl border border-white/5 p-6 sm:p-8 animate-fade-in"
+            >
               <div className="overflow-x-auto">
                 <table className="w-full text-sm text-white">
                   <thead>
@@ -374,14 +415,35 @@ export default function EMICalculatorPage() {
                   </thead>
                   <tbody>
                     {amortizationSchedule.map((row) => (
-                      <tr key={row.month} className="border-b border-white/5">
-                        <td className="px-4 py-2">{row.month}</td>
+                      <tr 
+                        key={row.month} 
+                        className={`
+                          border-b border-white/5 hover:bg-white/5 transition-colors
+                          ${row.month % 12 === 0 ? 'border-b-2 border-white/20 bg-black/40' : ''}
+                          ${row.month % 12 === 1 ? 'pt-4' : ''}
+                        `}
+                      >
+                        <td className={`px-4 py-2 ${row.month % 12 === 0 ? 'font-medium' : ''}`}>
+                          {row.month}
+                          {row.month % 12 === 0 && (
+                            <span className="text-xs text-white/60 ml-2">
+                              Year {row.month / 12}
+                            </span>
+                          )}
+                        </td>
                         <td className="px-4 py-2 text-right">{formatCurrency(row.emi)}</td>
                         <td className="px-4 py-2 text-right">{formatCurrency(row.principal)}</td>
                         <td className="px-4 py-2 text-right">{formatCurrency(row.interest)}</td>
                         <td className="px-4 py-2 text-right">{formatCurrency(row.balance)}</td>
                       </tr>
                     ))}
+                    <tr className="bg-white/10 font-medium">
+                      <td className="px-4 py-3">Total</td>
+                      <td className="px-4 py-3 text-right">{formatCurrency(emi * amortizationSchedule.length)}</td>
+                      <td className="px-4 py-3 text-right">{formatCurrency(loanAmount)}</td>
+                      <td className="px-4 py-3 text-right">{formatCurrency(totalInterest)}</td>
+                      <td className="px-4 py-3 text-right">-</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>

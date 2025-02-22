@@ -4,7 +4,15 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.1.2 (Latest)
+### Version 2.1.3 (Latest)
+- Enhanced EMI Calculator amortization table:
+  - Improved visual separation between yearly entries
+  - Added year indicators for better readability
+  - Implemented smooth scrolling when viewing the table
+  - Enhanced table styling with hover effects
+  - Added visual hierarchy for year-end rows
+
+### Version 2.1.2
 - Enhanced EMI Calculator functionality:
   - Added amortization table feature for loan terms up to 3 years
   - Improved table layout with monthly breakdowns
