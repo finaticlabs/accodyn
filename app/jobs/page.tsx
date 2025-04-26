@@ -102,9 +102,9 @@ export default function JobsPage() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {jobs.map((job, index) => (
-            <div key={index} className="bg-black/40 backdrop-blur-sm rounded-2xl border border-white/5 p-6 hover:border-white/10 transition-colors">
+            <div key={index} className="bg-black/60 backdrop-blur-lg rounded-2xl border border-white/10 p-6 hover:border-white/20 transition-colors shadow-lg">
               <div className="flex items-center justify-between mb-4">
-                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center border border-white/5">
+                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center border border-white/10">
                   <Image
                     src="/favicon.svg"
                     alt="Finatic Labs"
@@ -115,26 +115,26 @@ export default function JobsPage() {
                     unoptimized
                   />
                 </div>
-                <span className="text-sm text-white/80 px-3 py-1 rounded-full border border-white/10">
+                <span className="text-sm text-white/90 px-3 py-1 rounded-full border border-white/20 bg-black/40">
                   {job.type}
                 </span>
               </div>
 
               <div className="mb-4">
-                <div className="text-white/60 text-sm mb-1">{job.category}</div>
+                <div className="text-white/70 text-sm mb-1">{job.category}</div>
                 <h2 className="text-white text-lg font-medium mb-2">{job.title}</h2>
-                <p className="text-white/60 text-sm">{job.domain}</p>
+                <p className="text-white/70 text-sm">{job.domain}</p>
               </div>
 
               <div className="flex flex-col space-y-3">
-                <div className="flex items-center justify-between text-sm text-white/60">
+                <div className="flex items-center justify-between text-sm text-white/70">
                   <div className="flex items-center">
-                    <svg className="w-4 h-4 mr-1 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 mr-1 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                     {job.workMode}
                   </div>
-                  <div className="text-white/60">
+                  <div className="text-white/70">
                     Stipend: {job.stipend}
                   </div>
                 </div>
@@ -143,7 +143,7 @@ export default function JobsPage() {
                   href={job.downloadLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-white/10 hover:bg-white/20 text-white text-sm text-center px-4 py-2 rounded-lg transition-colors"
+                  className="w-full bg-white/20 hover:bg-white/30 text-white text-sm text-center px-4 py-2 rounded-lg transition-colors font-medium"
                 >
                   Download Job Description
                 </a>

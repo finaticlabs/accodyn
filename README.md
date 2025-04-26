@@ -4,7 +4,16 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.4.1 (Latest)
+### Version 2.4.2 (Latest)
+- Enhanced job card visibility on Jobs page:
+  - Increased card background opacity from 40% to 60%
+  - Improved backdrop blur effect for better content readability
+  - Added subtle shadow effect for depth and emphasis
+  - Increased text contrast with higher opacity values
+  - Enhanced button visibility with stronger background color
+  - Improved overall visual hierarchy and focus on job details
+
+### Version 2.4.1
 - Extended background video to Waitlist and Jobs pages:
   - Added background video with 20% opacity to both pages
   - Implemented consistent gradient overlay across all pages
