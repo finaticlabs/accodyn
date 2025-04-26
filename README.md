@@ -4,7 +4,15 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.4.0 (Latest)
+### Version 2.4.1 (Latest)
+- Extended background video to Waitlist and Jobs pages:
+  - Added background video with 20% opacity to both pages
+  - Implemented consistent gradient overlay across all pages
+  - Added proper z-indexing to ensure content visibility
+  - Enhanced visual consistency throughout the entire website
+  - Improved user experience with cohesive design language
+
+### Version 2.4.0
 - Enhanced About page visual design:
   - Added background video with reduced opacity (20%)
   - Implemented gradient overlay for better text readability

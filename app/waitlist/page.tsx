@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function WaitlistPage() {
   const [formData, setFormData] = useState({
@@ -10,6 +10,11 @@ export default function WaitlistPage() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -36,9 +41,26 @@ export default function WaitlistPage() {
   }
 
   return (
-    <main>
+    <main className="relative">
+      {/* Video Background */}
+      <div className="fixed inset-0 z-0">
+        {isClient && (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover opacity-20"
+          >
+            <source src="/new.mp4" type="video/mp4" />
+          </video>
+        )}
+        {/* Overlay gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+      </div>
+
       {/* Form Section */}
-      <div className="flex items-center justify-center px-4 py-4 sm:py-8">
+      <div className="flex items-center justify-center px-4 py-4 sm:py-8 relative z-10 min-h-screen">
         <div className="w-full max-w-[600px] bg-black/40 backdrop-blur-sm rounded-2xl border border-white/5 p-4 sm:p-8">
           <h1 className="text-2xl sm:text-3xl font-light text-white mb-4 sm:mb-8">Join the Waitlist!</h1>
           

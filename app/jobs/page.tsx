@@ -2,8 +2,15 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { useState, useEffect } from 'react'
 
 export default function JobsPage() {
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
   const jobs = [
     {
       title: 'Database Management Intern',
@@ -71,9 +78,26 @@ export default function JobsPage() {
   ]
 
   return (
-    <main>
+    <main className="relative">
+      {/* Video Background */}
+      <div className="fixed inset-0 z-0">
+        {isClient && (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover opacity-20"
+          >
+            <source src="/new.mp4" type="video/mp4" />
+          </video>
+        )}
+        {/* Overlay gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+      </div>
+
       {/* Jobs Section */}
-      <div className="px-4 sm:px-8 py-8 sm:py-12">
+      <div className="px-4 sm:px-8 py-8 sm:py-12 relative z-10">
         <h1 className="text-3xl sm:text-4xl font-bold text-white mb-8">Featured Jobs</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -130,7 +154,7 @@ export default function JobsPage() {
       </div>
 
       {/* Footer */}
-      <div className="w-full bg-black/40 backdrop-blur-sm mt-12">
+      <div className="w-full bg-black/40 backdrop-blur-sm mt-12 relative z-10">
         <footer className="w-full max-w-[1400px] mx-auto px-8 py-8 border-t border-white/5">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center space-x-2">
