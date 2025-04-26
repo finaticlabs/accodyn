@@ -40,7 +40,7 @@ export default function WaitlistPage() {
       {/* Form Section */}
       <div className="flex items-center justify-center px-4 py-4 sm:py-8">
         <div className="w-full max-w-[600px] bg-black/40 backdrop-blur-sm rounded-2xl border border-white/5 p-4 sm:p-8">
-          <h1 className="text-2xl sm:text-3xl font-light text-white mb-4 sm:mb-8">Join the Waitlist</h1>
+          <h1 className="text-2xl sm:text-3xl font-light text-white mb-4 sm:mb-8">Join the Waitlist!</h1>
           
           <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
             <div>

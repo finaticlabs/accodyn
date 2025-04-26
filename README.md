@@ -4,7 +4,13 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.3.4 (Latest)
+### Version 2.3.5 (Latest)
+- Enhanced user engagement on waitlist page:
+  - Added exclamation mark to "Join the Waitlist!" heading
+  - Improved call-to-action visibility and friendliness
+  - Maintained consistent styling and responsiveness
+
+### Version 2.3.4
 - Improved About Us page consistency:
   - Left-aligned the "Our Founder" heading to match other section headings
   - Enhanced visual consistency across all sections
