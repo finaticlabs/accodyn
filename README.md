@@ -4,7 +4,14 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.3.8 (Latest)
+### Version 2.3.9 (Latest)
+- Further improved About Us section positioning:
+  - Significantly increased vertical spacing with larger top margin
+  - Expanded top padding for better visual separation
+  - Ensured section appears fully in viewport when scrolled to
+  - Optimized for better scrolling experience across all devices
+
+### Version 2.3.8
 - Improved About Us section positioning on home page:
   - Added more vertical spacing before and after the section
   - Increased padding at top and bottom
