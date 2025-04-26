@@ -4,7 +4,15 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.3.5 (Latest)
+### Version 2.3.6 (Latest)
+- Added Vercel deployment configuration:
+  - Created vercel.json configuration file
+  - Specified Next.js as the framework
+  - Configured build, install and development commands
+  - Set output directory to .next
+  - Optimized for Vercel deployment environment
+
+### Version 2.3.5
 - Enhanced user engagement on waitlist page:
   - Added exclamation mark to "Join the Waitlist!" heading
   - Improved call-to-action visibility and friendliness
