@@ -81,7 +81,7 @@ export default function AboutPage() {
           </div>
           
           <div className={`bg-black/20 backdrop-blur-md rounded-2xl p-8 border border-white/5 mt-12 transition-all duration-700 delay-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <h2 className="text-2xl font-light mb-6 text-center text-white/90">Our Founder</h2>
+            <h2 className="text-2xl font-light mb-6 text-white/90">Our Founder</h2>
             
             <div className="flex flex-col items-center">
               <div className="w-40 h-40 mb-8 rounded-full bg-amber-500/20 flex items-center justify-center">
