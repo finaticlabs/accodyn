@@ -4,7 +4,7 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.1.4 (Latest)
+### Version 2.2 (Latest)
 - Site structure simplification:
   - Removed Features page completely
   - Updated navigation menus (both mobile and desktop)
