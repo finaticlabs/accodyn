@@ -4,7 +4,14 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.3.6 (Latest)
+### Version 2.3.7 (Latest)
+- Fixed build errors for Vercel deployment:
+  - Resolved unescaped entities in About page
+  - Replaced apostrophes with &apos; HTML entities
+  - Fixed ESLint react/no-unescaped-entities errors
+  - Ensured successful build process completion
+
+### Version 2.3.6
 - Added Vercel deployment configuration:
   - Created vercel.json configuration file
   - Specified Next.js as the framework

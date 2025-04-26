@@ -95,10 +95,10 @@ export default function AboutPage() {
                   Girendra Trivedi, Founder of Finatic Labs, brings over 14 years of deep-rooted leadership and domain expertise in financial services to the world of fintech. With a proven track record across top-tier institutions like Cholamandalam Investment & Finance, Sundaram Finance and Jumbo Finvest, Girendra has consistently driven operational excellence, technological innovation, and business growth.
                 </p>
                 <p className="text-lg text-white/80 leading-relaxed mb-4">
-                  Girendra's early adoption of technology—introducing tablet-based loan processing and online auction systems—demonstrated how digital tools can transform traditional lending operations. This insight laid the foundation for Finatic Labs, a venture committed to developing high-impact, industry-specific software solutions for NBFCs.
+                  Girendra&apos;s early adoption of technology—introducing tablet-based loan processing and online auction systems—demonstrated how digital tools can transform traditional lending operations. This insight laid the foundation for Finatic Labs, a venture committed to developing high-impact, industry-specific software solutions for NBFCs.
                 </p>
                 <p className="text-lg text-white/80 leading-relaxed mb-4">
-                  Under his leadership, Finatic Labs merges robust financial knowledge with modern technological capabilities to empower lending institutions with smarter, faster, and more secure operations. His extensive field experience in commercial vehicle, tractor, construction equipment, home loan, and LAP financing directly informs Finatic's end-to-end software suite—designed to streamline NBFC processes, enhance compliance, and ensure data integrity.
+                  Under his leadership, Finatic Labs merges robust financial knowledge with modern technological capabilities to empower lending institutions with smarter, faster, and more secure operations. His extensive field experience in commercial vehicle, tractor, construction equipment, home loan, and LAP financing directly informs Finatic&apos;s end-to-end software suite—designed to streamline NBFC processes, enhance compliance, and ensure data integrity.
                 </p>
                 <p className="text-lg text-white/80 leading-relaxed">
                   At Finatic Labs, Girendra leads a passionate team that shares his mission: to build technology that understands finance from the ground up.
