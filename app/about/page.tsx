@@ -6,14 +6,33 @@ import Link from 'next/link'
 
 export default function AboutPage() {
   const [isVisible, setIsVisible] = useState(false)
+  const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
     setIsVisible(true)
+    setIsClient(true)
   }, [])
 
   return (
-    <main>
-      <div className="w-full min-h-screen max-w-[1400px] mx-auto px-8 py-24">
+    <main className="relative">
+      {/* Video Background */}
+      <div className="fixed inset-0 z-0">
+        {isClient && (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover opacity-20"
+          >
+            <source src="/new.mp4" type="video/mp4" />
+          </video>
+        )}
+        {/* Overlay gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+      </div>
+
+      <div className="w-full min-h-screen max-w-[1400px] mx-auto px-8 py-24 relative z-10">
         <div className={`max-w-4xl mx-auto transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <h1 className="text-5xl font-light mb-12 text-center text-white">
             About Us

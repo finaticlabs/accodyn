@@ -4,7 +4,15 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.3.9 (Latest)
+### Version 2.4.0 (Latest)
+- Enhanced About page visual design:
+  - Added background video with reduced opacity (20%)
+  - Implemented gradient overlay for better text readability
+  - Ensured consistent design language with home page
+  - Improved overall visual appeal while maintaining content focus
+  - Added proper z-indexing to maintain content hierarchy
+
+### Version 2.3.9
 - Further improved About Us section positioning:
   - Significantly increased vertical spacing with larger top margin
   - Expanded top padding for better visual separation
