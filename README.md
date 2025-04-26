@@ -4,7 +4,15 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.3.2 (Latest)
+### Version 2.3.3 (Latest)
+- Redesigned About Us page founder section:
+  - Changed layout to vertical format with photo icon at top
+  - Centered profile icon and section heading
+  - Placed all text content below the photo
+  - Improved overall visual hierarchy and reading flow
+  - Enhanced mobile-first layout that works well across all devices
+
+### Version 2.3.2
 - Improved About Us page styling:
   - Center-aligned the founder profile icon for better visual balance
   - Left-aligned founder text content for improved readability

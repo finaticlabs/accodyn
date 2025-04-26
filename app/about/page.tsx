@@ -81,16 +81,16 @@ export default function AboutPage() {
           </div>
           
           <div className={`bg-black/20 backdrop-blur-md rounded-2xl p-8 border border-white/5 mt-12 transition-all duration-700 delay-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <h2 className="text-2xl font-light mb-6 text-white/90">Our Founder</h2>
-            <div className="flex flex-col md:flex-row gap-8 items-start">
-              <div className="w-full md:w-1/3 flex justify-center">
-                <div className="w-40 h-40 rounded-full bg-amber-500/20 flex items-center justify-center">
-                  <svg className="w-16 h-16 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </div>
+            <h2 className="text-2xl font-light mb-6 text-center text-white/90">Our Founder</h2>
+            
+            <div className="flex flex-col items-center">
+              <div className="w-40 h-40 mb-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+                <svg className="w-16 h-16 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
               </div>
-              <div className="w-full md:w-2/3 text-left">
+              
+              <div className="text-left">
                 <p className="text-lg text-white/80 leading-relaxed mb-4">
                   Girendra Trivedi, Founder of Finatic Labs, brings over 14 years of deep-rooted leadership and domain expertise in financial services to the world of fintech. With a proven track record across top-tier institutions like Cholamandalam Investment & Finance, Sundaram Finance and Jumbo Finvest, Girendra has consistently driven operational excellence, technological innovation, and business growth.
                 </p>
