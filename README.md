@@ -4,7 +4,16 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.2 (Latest)
+### Version 2.3 (Latest)
+- Added dedicated About Us page:
+  - Created a new `/about` route with enhanced content
+  - Updated navigation to link to the dedicated page instead of home page section
+  - Maintained the About Us section on the home page with a "Learn more" link
+  - Updated robots.txt to include the new page
+  - Added the page to sitemap.xml for SEO
+  - Improved user experience with smooth animations
+
+### Version 2.2
 - Site structure simplification:
   - Removed Features page completely
   - Updated navigation menus (both mobile and desktop)

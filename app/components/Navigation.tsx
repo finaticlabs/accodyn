@@ -65,7 +65,7 @@ export default function Navigation() {
             </Link>
           </div>
         </div>
-        <Link href="/#about" className="text-sm text-white/80 hover:text-white transition-colors">
+        <Link href="/about" className="text-sm text-white/80 hover:text-white transition-colors">
           About Us
         </Link>
         <Link href="/jobs" className="text-sm text-white/80 hover:text-white transition-colors">
@@ -120,7 +120,7 @@ export default function Navigation() {
           </div>
         </div>
         <Link 
-          href="/#about" 
+          href="/about" 
           className="text-lg text-white/80 hover:text-white transition-colors"
           onClick={() => setIsMobileMenuOpen(false)}
         >

@@ -123,6 +123,14 @@ export default function Home() {
                 <p className="text-sm text-white/60">Continuous growth and improvement</p>
               </div>
             </div>
+            <div className="mt-12 text-center">
+              <Link href="/about" className="inline-flex items-center bg-white/10 hover:bg-white/20 text-white/80 hover:text-white px-5 py-2 rounded-lg transition-colors">
+                <span>Learn more about us</span>
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
