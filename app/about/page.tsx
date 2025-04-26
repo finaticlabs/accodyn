@@ -29,41 +29,8 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className={`bg-black/20 backdrop-blur-md rounded-2xl p-8 border border-white/5 mb-12 transition-all duration-700 delay-200 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <h2 className="text-2xl font-light mb-6 text-white/90">Our Founder</h2>
-            <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
-              <div className="w-32 h-32 bg-gradient-to-br from-blue-500/30 to-purple-500/30 rounded-full flex items-center justify-center flex-shrink-0">
-                <svg className="w-16 h-16 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
-              <div className="text-white/80">
-                <p className="text-lg leading-relaxed mb-4">
-                  Girendra Trivedi, Founder of Finatic Labs, brings over 14 years of deep-rooted leadership and domain expertise in financial services to the world of fintech. With a proven track record across top-tier institutions like Cholamandalam Investment & Finance, Sundaram Finance and Jumbo Finvest, Girendra has consistently driven operational excellence, technological innovation, and business growth.
-                </p>
-                <p className="text-lg leading-relaxed mb-4">
-                  Girendra's early adoption of technology—introducing tablet-based loan processing and online auction systems—demonstrated how digital tools can transform traditional lending operations. This insight laid the foundation for Finatic Labs, a venture committed to developing high-impact, industry-specific software solutions for NBFCs.
-                </p>
-                <p className="text-lg leading-relaxed mb-4">
-                  Under his leadership, Finatic Labs merges robust financial knowledge with modern technological capabilities to empower lending institutions with smarter, faster, and more secure operations. His extensive field experience in commercial vehicle, tractor, construction equipment, home loan, and LAP financing directly informs Finatic's end-to-end software suite—designed to streamline NBFC processes, enhance compliance, and ensure data integrity.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  At Finatic Labs, Girendra leads a passionate team that shares his mission: to build technology that understands finance from the ground up.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className={`bg-black/20 backdrop-blur-md rounded-2xl p-8 border border-white/5 mb-12 transition-all duration-700 delay-300 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <h2 className="text-2xl font-light mb-6 text-white/90">Our Vision</h2>
-            <p className="text-lg text-white/80 leading-relaxed mb-6">
-              We envision a future where NBFCs can operate with maximum efficiency and security, empowered by intelligent software solutions that adapt to their unique needs.
-            </p>
-          </div>
-
-          <h2 className="text-2xl font-light mb-6 text-center text-white/90">Our Core Values</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
-            <div className={`text-center transition-all duration-700 delay-400 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            <div className={`text-center transition-all duration-700 delay-100 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <div className="bg-black/20 backdrop-blur-md rounded-2xl p-8 border border-white/5 h-full">
                 <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-purple-500/20 flex items-center justify-center">
                   <svg className="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -77,7 +44,7 @@ export default function AboutPage() {
               </div>
             </div>
             
-            <div className={`text-center transition-all duration-700 delay-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+            <div className={`text-center transition-all duration-700 delay-200 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <div className="bg-black/20 backdrop-blur-md rounded-2xl p-8 border border-white/5 h-full">
                 <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-blue-500/20 flex items-center justify-center">
                   <svg className="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -91,7 +58,7 @@ export default function AboutPage() {
               </div>
             </div>
             
-            <div className={`text-center transition-all duration-700 delay-600 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+            <div className={`text-center transition-all duration-700 delay-300 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <div className="bg-black/20 backdrop-blur-md rounded-2xl p-8 border border-white/5 h-full">
                 <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-green-500/20 flex items-center justify-center">
                   <svg className="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -101,6 +68,40 @@ export default function AboutPage() {
                 <h3 className="text-xl text-white/90 font-medium mb-4">Learning</h3>
                 <p className="text-white/60">
                   We embrace continuous growth and improvement, staying at the forefront of technology and industry trends.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className={`bg-black/20 backdrop-blur-md rounded-2xl p-8 border border-white/5 mt-12 transition-all duration-700 delay-400 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+            <h2 className="text-2xl font-light mb-6 text-white/90">Our Vision</h2>
+            <p className="text-lg text-white/80 leading-relaxed mb-6">
+              We envision a future where NBFCs can operate with maximum efficiency and security, empowered by intelligent software solutions that adapt to their unique needs.
+            </p>
+          </div>
+          
+          <div className={`bg-black/20 backdrop-blur-md rounded-2xl p-8 border border-white/5 mt-12 transition-all duration-700 delay-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+            <h2 className="text-2xl font-light mb-6 text-white/90">Our Founder</h2>
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="w-full md:w-1/3 flex justify-center md:justify-start">
+                <div className="w-40 h-40 rounded-full bg-amber-500/20 flex items-center justify-center">
+                  <svg className="w-16 h-16 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+              </div>
+              <div className="w-full md:w-2/3">
+                <p className="text-lg text-white/80 leading-relaxed mb-4">
+                  Girendra Trivedi, Founder of Finatic Labs, brings over 14 years of deep-rooted leadership and domain expertise in financial services to the world of fintech. With a proven track record across top-tier institutions like Cholamandalam Investment & Finance, Sundaram Finance and Jumbo Finvest, Girendra has consistently driven operational excellence, technological innovation, and business growth.
+                </p>
+                <p className="text-lg text-white/80 leading-relaxed mb-4">
+                  Girendra's early adoption of technology—introducing tablet-based loan processing and online auction systems—demonstrated how digital tools can transform traditional lending operations. This insight laid the foundation for Finatic Labs, a venture committed to developing high-impact, industry-specific software solutions for NBFCs.
+                </p>
+                <p className="text-lg text-white/80 leading-relaxed mb-4">
+                  Under his leadership, Finatic Labs merges robust financial knowledge with modern technological capabilities to empower lending institutions with smarter, faster, and more secure operations. His extensive field experience in commercial vehicle, tractor, construction equipment, home loan, and LAP financing directly informs Finatic's end-to-end software suite—designed to streamline NBFC processes, enhance compliance, and ensure data integrity.
+                </p>
+                <p className="text-lg text-white/80 leading-relaxed">
+                  At Finatic Labs, Girendra leads a passionate team that shares his mission: to build technology that understands finance from the ground up.
                 </p>
               </div>
             </div>

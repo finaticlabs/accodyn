@@ -4,13 +4,12 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.4 (Latest)
-- Enhanced About Us page with founder information:
-  - Added "Our Founder" section with detailed biography of Girendra Trivedi
-  - Reorganized page layout for better content flow
-  - Separated core values into dedicated section
-  - Improved section styling and responsive design
-  - Enhanced animation timings for better user experience
+### Version 2.3.1 (Latest)
+- Enhanced About Us page:
+  - Added "Our Founder" section with Girendra Trivedi's profile
+  - Improved layout with dedicated founder card
+  - Added comprehensive professional background and expertise
+  - Maintained consistent styling with other page sections
 
 ### Version 2.3
 - Added dedicated About Us page:
