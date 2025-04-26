@@ -4,7 +4,15 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.1.3 (Latest)
+### Version 2.1.4 (Latest)
+- Site structure simplification:
+  - Removed Features page completely
+  - Updated navigation menus (both mobile and desktop)
+  - Updated robots.txt to remove features page references
+  - Updated sitemap.xml to remove features page entry
+  - Streamlined the navigation experience
+
+### Version 2.1.3
 - Enhanced EMI Calculator amortization table:
   - Improved visual separation between yearly entries
   - Added year indicators for better readability

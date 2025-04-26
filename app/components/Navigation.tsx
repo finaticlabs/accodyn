@@ -40,9 +40,6 @@ export default function Navigation() {
         <Link href="/" className="text-sm text-white/80 hover:text-white transition-colors">
           Home
         </Link>
-        <Link href="/features" className="text-sm text-white/80 hover:text-white transition-colors">
-          Features
-        </Link>
         <div 
           className="relative"
           onMouseEnter={() => setIsServicesDropdownOpen(true)}
@@ -94,13 +91,6 @@ export default function Navigation() {
           onClick={() => setIsMobileMenuOpen(false)}
         >
           Home
-        </Link>
-        <Link 
-          href="/features" 
-          className="text-lg text-white/80 hover:text-white transition-colors"
-          onClick={() => setIsMobileMenuOpen(false)}
-        >
-          Features
         </Link>
         <div className="flex flex-col items-center">
           <button

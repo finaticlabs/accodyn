@@ -8,14 +8,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Features Page -->
-  <url>
-    <loc>https://finaticlabs.com/features</loc>
-    <lastmod>2024-02-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- Tools -->
   <url>
     <loc>https://finaticlabs.com/tools/emi-calculator</loc>

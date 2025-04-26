@@ -10,7 +10,6 @@ Disallow: /api/*
 # Google Search Engine Robot
 User-agent: Googlebot
 Allow: /
-Allow: /features
 Allow: /tools
 Allow: /jobs
 Allow: /waitlist
@@ -30,7 +29,6 @@ Disallow: /api/*
 # Google Smartphone Robot
 User-agent: Googlebot-smartphone
 Allow: /
-Allow: /features
 Allow: /tools
 Allow: /jobs
 Allow: /waitlist
