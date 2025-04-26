@@ -85,7 +85,7 @@ export default function Home() {
       </div>
 
       {/* About Us Section */}
-      <div ref={aboutRef} id="about" className="w-full min-h-screen max-w-[1400px] mx-auto px-8 pt-12 pb-24">
+      <div ref={aboutRef} id="about" className="w-full min-h-screen max-w-[1400px] mx-auto px-8 pt-24 pb-36 mt-24">
         <div className={`max-w-4xl mx-auto transition-all duration-1000 transform ${isAboutVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <h2 className="text-4xl font-light mb-12 text-center text-white">
             About Us
