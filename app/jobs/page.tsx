@@ -4,20 +4,19 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
-// This component will prevent the global footer from rendering
-export function noFooterLayout(page: React.ReactNode) {
-  return (
-    <div data-no-global-footer className="relative z-20">
-      {page}
-    </div>
-  )
-}
-
 export default function JobsPage() {
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
     setIsClient(true)
+    
+    // Mark this page as having a custom footer
+    document.body.setAttribute('data-custom-footer', 'true')
+    
+    // Clean up when component unmounts
+    return () => {
+      document.body.removeAttribute('data-custom-footer')
+    }
   }, [])
 
   const jobs = [
@@ -86,7 +85,7 @@ export default function JobsPage() {
     }
   ]
 
-  return noFooterLayout(
+  return (
     <main className="relative">
       {/* Video Background */}
       <div className="fixed inset-0 z-0">

@@ -8,8 +8,8 @@ export default function Footer() {
   const [shouldRender, setShouldRender] = useState(true)
 
   useEffect(() => {
-    // Check if the page has a custom footer by looking for the data attribute
-    const hasCustomFooter = document.querySelector('[data-no-global-footer]')
+    // Check if the page has a custom footer by looking for the data attribute on body
+    const hasCustomFooter = document.body.hasAttribute('data-custom-footer')
     setShouldRender(!hasCustomFooter)
   }, [])
 

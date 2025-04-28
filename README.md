@@ -4,6 +4,14 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 2.8.2 (Latest - Pending Approval)
+- Fixed Vercel deployment issues:
+  - Removed invalid page export that was causing build failures
+  - Changed footer detection method to use body attributes
+  - Improved client-side detection of pages with custom footers
+  - Enhanced cleanup on component unmounting
+  - Maintained same functionality with Next.js compliant implementation
+
 ### Version 2.8.1 (Latest - Pending Approval)
 - Enhanced footer implementation:
   - Added conditional rendering to global footer component
