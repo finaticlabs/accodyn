@@ -2,8 +2,21 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 
 export default function Footer() {
+  const [shouldRender, setShouldRender] = useState(true)
+
+  useEffect(() => {
+    // Check if the page has a custom footer by looking for the data attribute
+    const hasCustomFooter = document.querySelector('[data-no-global-footer]')
+    setShouldRender(!hasCustomFooter)
+  }, [])
+
+  if (!shouldRender) {
+    return null
+  }
+
   return (
     <div className="w-full bg-black/40 backdrop-blur-sm">
       <footer className="w-full max-w-[1400px] mx-auto px-8 py-8 border-t border-white/5">

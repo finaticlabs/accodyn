@@ -4,6 +4,15 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 2.8.1 (Latest - Pending Approval)
+- Enhanced footer implementation:
+  - Added conditional rendering to global footer component
+  - Preserved custom footer on Jobs page
+  - Implemented noFooterLayout function for pages with custom footers
+  - Added DOM detection to prevent duplicate footers
+  - Improved user experience with specialized job application footer
+  - Maintained consistent branding across the site
+
 ### Version 2.8.0 (Latest - Pending Approval)
 - Added global footer to all pages:
   - Created reusable Footer component
