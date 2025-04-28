@@ -4,7 +4,26 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 2.4.2 (Latest)
+### Version 2.8.0 (Latest - Pending Approval)
+- Added global footer to all pages:
+  - Created reusable Footer component
+  - Added footer to the root layout so it appears on every page
+  - Removed duplicate footer from the home page
+  - Consistent styling with the original home page footer
+  - Enhanced site-wide navigation with links to contact and LinkedIn
+  - Improved user experience with consistent branding across all pages
+
+### Version 2.7.0 (Pending Approval)
+- Updated Credit Kit features in Products page:
+  - Removed previous Credit Assessment and Loan Processing features
+  - Added new focus on technological aspects of the product:
+    - Advanced AI Engine with machine learning capabilities
+    - Secure Database Architecture with redundant backups
+    - Robust Security Framework with encryption and authentication features
+  - Enhanced product value proposition with technology-focused benefits
+  - Maintained consistent design and layout
+
+### Version 2.6.1 (Pending Approval)
 - Enhanced job card visibility on Jobs page:
   - Increased card background opacity from 40% to 60%
   - Improved backdrop blur effect for better content readability
