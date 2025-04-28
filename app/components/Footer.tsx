@@ -3,15 +3,23 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 export default function Footer() {
+  const pathname = usePathname()
   const [shouldRender, setShouldRender] = useState(true)
 
   useEffect(() => {
-    // Check if the page has a custom footer by looking for the data attribute on body
+    // Don't render on the jobs page
+    if (pathname === '/jobs') {
+      setShouldRender(false)
+      return
+    }
+
+    // For other pages, check for custom footer attribute as a fallback
     const hasCustomFooter = document.body.hasAttribute('data-custom-footer')
     setShouldRender(!hasCustomFooter)
-  }, [])
+  }, [pathname])
 
   if (!shouldRender) {
     return null

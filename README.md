@@ -4,6 +4,14 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 2.8.3 (Latest - Pending Approval)
+- Fixed duplicate footer issue on Jobs page:
+  - Implemented route-based footer detection using Next.js usePathname hook
+  - Added explicit path check for Jobs page to prevent double footers
+  - Added fallback for attribute-based footer handling
+  - Improved footer component to handle multiple detection methods
+  - Enhanced user experience by ensuring only one footer appears per page
+
 ### Version 2.8.2 (Latest - Pending Approval)
 - Fixed Vercel deployment issues:
   - Removed invalid page export that was causing build failures
