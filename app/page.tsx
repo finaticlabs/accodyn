@@ -68,10 +68,10 @@ export default function Home() {
               <span className="text-sm sm:text-base text-white/80 font-bold">Launching Soon!</span>
             </div>
             <h1 className="text-[28px] sm:text-[48px] md:text-[64px] leading-tight font-light mb-3 sm:mb-4">
-              <span className="text-white/40">Intelligence Engineered for</span> Modern Finance
+              <span className="text-white/40">AI-Powered Solutions for</span> Modern Finance
             </h1>
             <p className="text-sm sm:text-base md:text-lg text-white/60 mb-4 sm:mb-6 max-w-2xl mx-auto px-2">
-              Streamline your NBFC operations with our comprehensive software suite. Enhanced security, compliance, and efficiency—all in one platform.
+              Elevate your financial operations with our AI-driven software suite. Enhanced security, compliance, and efficiency—all in one intelligent platform.
             </p>
             <div className="flex flex-col items-center space-y-3 sm:space-y-4">
               <div className="flex flex-col items-center justify-center w-full max-w-xs">

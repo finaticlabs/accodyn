@@ -41,10 +41,10 @@ export default function AboutPage() {
           <div className="bg-black/20 backdrop-blur-md rounded-2xl p-8 border border-white/5 mb-12">
             <h2 className="text-2xl font-light mb-6 text-white/90">Our Mission</h2>
             <p className="text-lg text-white/80 leading-relaxed mb-8">
-              We are a passionate team dedicated to creating innovative solutions that make a difference in the world of finance. Our work spans various fields, from technology and design to creative industries, aiming to provide meaningful experiences for our audience.
+              We are a passionate team dedicated to creating innovative solutions that make a difference in the world of finance. Our work spans various fields, from artificial intelligence and machine learning to secure software architecture, aiming to provide transformative experiences for our clients.
             </p>
             <p className="text-lg text-white/80 leading-relaxed">
-              At Finatic Labs, we believe in collaboration, creativity, and continuous learning. Our goal is to transform NBFC operations with comprehensive software solutions that enhance security, compliance, and efficiency.
+              At Finatic Labs, we believe in innovation, excellence, and continuous learning. Our goal is to enhance financial services with intelligent AI/ML-driven software solutions that improve security, compliance, and operational efficiency.
             </p>
           </div>
 
@@ -95,7 +95,7 @@ export default function AboutPage() {
           <div className={`bg-black/20 backdrop-blur-md rounded-2xl p-8 border border-white/5 mt-12 transition-all duration-700 delay-400 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h2 className="text-2xl font-light mb-6 text-white/90">Our Vision</h2>
             <p className="text-lg text-white/80 leading-relaxed mb-6">
-              We envision a future where NBFCs can operate with maximum efficiency and security, empowered by intelligent software solutions that adapt to their unique needs.
+              We envision a future where financial services operate with maximum efficiency and security, empowered by intelligent software solutions that adapt to their unique needs.
             </p>
           </div>
 

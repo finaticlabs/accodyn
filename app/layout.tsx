@@ -13,8 +13,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "FinaticLabs - AI-Powered Financial Suite for NBFCs",
-  description: "Transform your NBFC operations with our comprehensive software suite. Enhanced security, compliance, and efficiency—all in one platform.",
+  title: "FinaticLabs - AI-Powered Solutions for Financial Services",
+  description: "Transform financial services with our AI-powered platform. Unlock smarter operations with enhanced security, compliance, and efficiency.",
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },

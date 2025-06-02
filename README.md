@@ -4,6 +4,14 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 2.9.5 (Latest - Pending Approval)
+- Updated website content to reflect AI focus:
+  - Updated main heading and hero text
+  - Enhanced mission and vision statements
+  - Updated metadata and SEO content
+  - Refined company description
+  - Maintained responsive design across all changes
+
 ### Version 2.9.4 (Latest - Pending Approval)
 - Removed Tools page and its components:
   - Deleted entire tools directory and EMI calculator
