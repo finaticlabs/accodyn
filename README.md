@@ -4,6 +4,14 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 2.9.2 (Latest - Pending Approval)
+- Added clickable phone number to footer:
+  - Added phone number +91 75688 67648
+  - Implemented click-to-call functionality
+  - Added phone icon for better visibility
+  - Enhanced contact options in footer
+  - Maintained consistent styling with existing elements
+
 ### Version 2.9.1 (Latest - Pending Approval)
 - Removed founder section from About page:
   - Simplified About page content
