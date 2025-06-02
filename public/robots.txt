@@ -1,6 +1,15 @@
 # Allow all search engines
 User-agent: *
 Allow: /
+Allow: /about
+Allow: /waitlist
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.ico$
 Disallow: /404
 Disallow: /500
 Disallow: /admin
@@ -11,7 +20,6 @@ Disallow: /api/*
 User-agent: Googlebot
 Allow: /
 Allow: /about
-Allow: /tools
 Allow: /waitlist
 Allow: /*.js$
 Allow: /*.css$
@@ -30,7 +38,6 @@ Disallow: /api/*
 User-agent: Googlebot-smartphone
 Allow: /
 Allow: /about
-Allow: /tools
 Allow: /waitlist
 Allow: /*.js$
 Allow: /*.css$

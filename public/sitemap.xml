@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
+  <!-- Home Page -->
   <url>
-    <loc>https://finaticlabs.com/</loc>
+    <loc>https://finaticlabs.com</loc>
     <lastmod>2024-02-11</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- About Us Page -->
+  <!-- About Page -->
   <url>
     <loc>https://finaticlabs.com/about</loc>
-    <lastmod>2024-07-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tools -->
-  <url>
-    <loc>https://finaticlabs.com/tools/emi-calculator</loc>
     <lastmod>2024-02-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

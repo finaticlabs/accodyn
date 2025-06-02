@@ -4,6 +4,14 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 2.9.4 (Latest - Pending Approval)
+- Removed Tools page and its components:
+  - Deleted entire tools directory and EMI calculator
+  - Removed tools section from navigation menu
+  - Updated sitemap.xml to remove tools entries
+  - Updated robots.txt to remove tools paths
+  - Simplified website structure and navigation
+
 ### Version 2.9.3 (Latest - Pending Approval)
 - Enhanced footer responsiveness:
   - Improved contact section layout on mobile devices
