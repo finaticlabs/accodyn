@@ -4,6 +4,12 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 2.9.6 (Latest - Pending Approval)
+- Updated website main heading:
+  - Changed heading to "Intelligence Engineered for Modern Finance"
+  - Maintained existing styling and responsive design
+  - Preserved visual hierarchy and typography
+
 ### Version 2.9.5 (Latest - Pending Approval)
 - Updated website content to reflect AI focus:
   - Updated main heading and hero text
