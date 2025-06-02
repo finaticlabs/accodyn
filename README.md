@@ -4,6 +4,21 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 2.9.1 (Latest - Pending Approval)
+- Removed founder section from About page:
+  - Simplified About page content
+  - Removed founder profile and biography
+  - Maintained core company information
+  - Preserved page layout and styling
+  - Enhanced focus on company mission and values
+
+### Version 2.9.0 (Latest - Pending Approval)
+- Removed Jobs page from the website:
+  - Deleted the entire jobs page and its components
+  - Simplified website structure
+  - Removed job listings functionality
+  - Streamlined navigation without jobs section
+
 ### Version 2.8.3 (Latest - Pending Approval)
 - Fixed duplicate footer issue on Jobs page:
   - Implemented route-based footer detection using Next.js usePathname hook
