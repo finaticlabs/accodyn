@@ -68,9 +68,6 @@ export default function Navigation() {
         <Link href="/about" className="text-sm text-white/80 hover:text-white transition-colors">
           About Us
         </Link>
-        <Link href="/jobs" className="text-sm text-white/80 hover:text-white transition-colors">
-          Jobs
-        </Link>
         <Link href="/waitlist" className="bg-white/90 hover:bg-white text-black px-5 py-2 rounded-lg transition-colors">
           Join the Waitlist
         </Link>
@@ -125,13 +122,6 @@ export default function Navigation() {
           onClick={() => setIsMobileMenuOpen(false)}
         >
           About Us
-        </Link>
-        <Link 
-          href="/jobs" 
-          className="text-lg text-white/80 hover:text-white transition-colors"
-          onClick={() => setIsMobileMenuOpen(false)}
-        >
-          Jobs
         </Link>
         <Link 
           href="/waitlist"
