@@ -39,7 +39,7 @@ export default function Footer() {
             />
             <span className="text-white/60 text-sm">© 2025 Finatic Labs. All rights reserved.</span>
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="flex flex-wrap items-center gap-2 justify-center md:justify-start">
             <span className="text-sm text-white/60">Contact:</span>
             <Link 
               href="https://mail.google.com/mail/?view=cm&fs=1&to=info@finaticlabs.com" 
@@ -49,7 +49,7 @@ export default function Footer() {
             >
               info@finaticlabs.com
             </Link>
-            <span className="text-white/60">|</span>
+            <span className="text-white/60 hidden sm:inline">|</span>
             <Link
               href="tel:+917568867648"
               className="text-sm text-white/60 hover:text-white transition-colors flex items-center"
@@ -59,7 +59,7 @@ export default function Footer() {
               </svg>
               +91 75688 67648
             </Link>
-            <span className="text-white/60">|</span>
+            <span className="text-white/60 hidden sm:inline">|</span>
             <Link
               href="https://www.linkedin.com/company/finatic-labs/posts/?feedView=all"
               target="_blank"

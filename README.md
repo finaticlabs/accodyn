@@ -4,6 +4,14 @@ This is the official website for Finatic Labs, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 2.9.3 (Latest - Pending Approval)
+- Enhanced footer responsiveness:
+  - Improved contact section layout on mobile devices
+  - Added flex-wrap for better content flow
+  - Adjusted spacing and alignment for small screens
+  - Hide dividers on mobile for cleaner look
+  - Optimized contact information display across all devices
+
 ### Version 2.9.2 (Latest - Pending Approval)
 - Added clickable phone number to footer:
   - Added phone number +91 75688 67648
