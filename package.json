@@ -1,6 +1,6 @@
 {
-  "name": "finaticlabs-landing-page",
-  "version": "2.3.5",
+  "name": "accodyn-tech-landing-page",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev --port 3000 --hostname 0.0.0.0",

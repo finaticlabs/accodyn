@@ -32,22 +32,22 @@ export default function Footer() {
           <div className="flex items-center space-x-2">
             <Image
               src="/flw.png"
-              alt="Finatic Labs"
+              alt="Accodyn Tech"
               width={32}
               height={32}
               className="opacity-90"
             />
-            <span className="text-white/60 text-sm">© 2025 Finatic Labs. All rights reserved.</span>
+            <span className="text-white/60 text-sm">© 2025 Accodyn Tech. All rights reserved.</span>
           </div>
           <div className="flex flex-wrap items-center gap-2 justify-center md:justify-start">
             <span className="text-sm text-white/60">Contact:</span>
             <Link 
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=info@finaticlabs.com" 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=info@accodyntech.com" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-white/60 hover:text-white transition-colors"
             >
-              info@finaticlabs.com
+              info@accodyntech.com
             </Link>
             <span className="text-white/60 hidden sm:inline">|</span>
             <Link
@@ -61,7 +61,7 @@ export default function Footer() {
             </Link>
             <span className="text-white/60 hidden sm:inline">|</span>
             <Link
-              href="https://www.linkedin.com/company/finatic-labs/posts/?feedView=all"
+              href="https://www.linkedin.com/company/accodyn-tech/posts/?feedView=all"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/60 hover:text-white transition-colors"

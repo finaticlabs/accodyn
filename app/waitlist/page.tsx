@@ -91,7 +91,7 @@ export default function WaitlistPage() {
                 value={formData.email}
                 onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                 className="w-full px-3 sm:px-4 py-1.5 sm:py-2 bg-black/40 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-white/20"
-                placeholder="leerob@finaticlabs.com"
+                placeholder="leerob@accodyntech.com"
               />
             </div>
 

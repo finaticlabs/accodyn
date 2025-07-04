@@ -12,7 +12,7 @@ export default function Navigation() {
       <Link href="/" className="flex items-center">
         <Image
           src="/logo.png"
-          alt="Finatic Labs"
+          alt="Accodyn Tech"
           width={150}
           height={150}
           className="opacity-90 w-[100px] sm:w-[120px] md:w-[216px]"

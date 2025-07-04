@@ -44,7 +44,7 @@ export default function AboutPage() {
               We are a passionate team dedicated to creating innovative solutions that make a difference in the world of finance. Our work spans various fields, from artificial intelligence and machine learning to secure software architecture, aiming to provide transformative experiences for our clients.
             </p>
             <p className="text-lg text-white/80 leading-relaxed">
-              At Finatic Labs, we believe in innovation, excellence, and continuous learning. Our goal is to enhance financial services with intelligent AI/ML-driven software solutions that improve security, compliance, and operational efficiency.
+              At Accodyn Tech, we believe in innovation, excellence, and continuous learning. Our goal is to enhance financial services with intelligent AI/ML-driven software solutions that improve security, compliance, and operational efficiency.
             </p>
           </div>
 

@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "FinaticLabs - AI-Powered Solutions for Financial Services",
+  title: "Accodyn Tech - AI-Powered Solutions for Financial Services",
   description: "Transform financial services with our AI-powered platform. Unlock smarter operations with enhanced security, compliance, and efficiency.",
   icons: {
     icon: [

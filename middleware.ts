@@ -77,13 +77,13 @@ export function middleware(request: NextRequest) {
     }
   }
 
-  // Get hostname (e.g. finaticlabs.com, www.finaticlabs.com, etc.)
+  // Get hostname (e.g. accodyntech.com, www.accodyntech.com, etc.)
   const hostname = request.headers.get('host') || ''
   const url = new URL(request.url)
 
   // Only handle www to non-www redirect for production domain
-  if (hostname.startsWith('www.finaticlabs.com')) {
-    const newUrl = `https://finaticlabs.com${url.pathname}${url.search}`
+  if (hostname.startsWith('www.accodyntech.com')) {
+    const newUrl = `https://accodyntech.com${url.pathname}${url.search}`
     return NextResponse.redirect(newUrl, 301)
   }
 

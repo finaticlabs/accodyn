@@ -73,7 +73,7 @@ Disallow: /_next/*
 Disallow: /api/*
 
 # Host
-Host: https://finaticlabs.com
+Host: https://accodyntech.com
 
 # Sitemap
-Sitemap: https://finaticlabs.com/sitemap.xml 
+Sitemap: https://accodyntech.com/sitemap.xml 

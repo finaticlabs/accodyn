@@ -1,8 +1,19 @@
-# Finatic Labs Website
+# Accodyn Tech Website
 
-This is the official website for Finatic Labs, a comprehensive software suite for NBFCs. The website is built using Next.js and features modern design with responsive layouts.
+This is the official website for Accodyn Tech, a comprehensive software suite for NBFCs. The website is built using Next.js and features modern design with responsive layouts.
 
 ## Changelog
+
+### Version 3.0.0 (Latest - Pending Approval)
+- Complete rebranding from Finatic Labs to Accodyn Tech:
+  - Updated all company name references throughout the codebase
+  - Changed package name from "finaticlabs-landing-page" to "accodyn-tech-landing-page"
+  - Updated domain references from finaticlabs.com to accodyntech.com
+  - Updated email addresses and contact information
+  - Updated LinkedIn company URL
+  - Updated robots.txt and sitemap.xml with new domain
+  - Updated metadata and SEO content
+  - Maintained all existing functionality and design
 
 ### Version 2.9.6 (Latest - Pending Approval)
 - Updated website main heading:
