@@ -11,6 +11,7 @@ This is the official website for Accodyn Tech, a comprehensive software suite fo
   - Removed company logo image from Footer component
   - Removed favicon references from middleware.ts
   - Removed unused Next.js Image imports from components
+  - Deleted logo.png file from public directory
   - Replaced all image references with text-based alternatives
   - Maintained all existing functionality and design structure
   - Prepared codebase for future rebranding assets
