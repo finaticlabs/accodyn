@@ -4,6 +4,17 @@ This is the official website for Accodyn Tech, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 3.0.1 (Latest - Pending Approval)
+- Removed all image file references from codebase for rebranding:
+  - Removed favicon references from app/layout.tsx (favicon.ico and favicon.svg)
+  - Replaced logo image with text-based logo in Navigation component
+  - Removed company logo image from Footer component
+  - Removed favicon references from middleware.ts
+  - Removed unused Next.js Image imports from components
+  - Replaced all image references with text-based alternatives
+  - Maintained all existing functionality and design structure
+  - Prepared codebase for future rebranding assets
+
 ### Version 3.0.0 (Latest - Pending Approval)
 - Complete rebranding from Finatic Labs to Accodyn Tech:
   - Updated all company name references throughout the codebase

@@ -22,7 +22,6 @@ const BYPASS_PATHS = [
   '/robots.txt',
   '/sitemap.xml',
   '/_next',
-  '/favicon.ico',
   '/public',
 ]
 
@@ -108,6 +107,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     // Match all paths except static files and api routes
-    '/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)',
+    '/((?!api|_next/static|_next/image|robots.txt|sitemap.xml).*)',
   ],
 } 

@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -10,14 +9,9 @@ export default function Navigation() {
   return (
     <nav className="relative flex items-center justify-between px-4 sm:px-8 py-2 sm:py-3 z-50">
       <Link href="/" className="flex items-center">
-        <Image
-          src="/logo.png"
-          alt="Accodyn Tech"
-          width={150}
-          height={150}
-          className="opacity-90 w-[100px] sm:w-[120px] md:w-[216px]"
-          priority
-        />
+        <span className="text-white text-xl sm:text-2xl font-semibold">
+          Accodyn Tech
+        </span>
       </Link>
 
       {/* Mobile Menu Button */}

@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 
@@ -30,13 +29,6 @@ export default function Footer() {
       <footer className="w-full max-w-[1400px] mx-auto px-8 py-8 border-t border-white/5">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center space-x-2">
-            <Image
-              src="/flw.png"
-              alt="Accodyn Tech"
-              width={32}
-              height={32}
-              className="opacity-90"
-            />
             <span className="text-white/60 text-sm">© 2025 Accodyn Tech. All rights reserved.</span>
           </div>
           <div className="flex flex-wrap items-center gap-2 justify-center md:justify-start">

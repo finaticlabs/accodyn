@@ -15,12 +15,6 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Accodyn Tech - AI-Powered Solutions for Financial Services",
   description: "Transform financial services with our AI-powered platform. Unlock smarter operations with enhanced security, compliance, and efficiency.",
-  icons: {
-    icon: [
-      { url: '/favicon.svg', type: 'image/svg+xml' },
-      { url: '/favicon.ico', sizes: 'any' }
-    ]
-  }
 };
 
 export default function RootLayout({
