@@ -4,6 +4,13 @@ This is the official website for Accodyn Tech, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 3.0.4 (Latest - Pending Approval)
+- Fixed nav-bar-logo.png deployment issue:
+  - Added nav-bar-logo.png to git repository (was previously untracked)
+  - Resolved Vercel deployment issue where logo was not loading
+  - Logo now properly displays in production environment
+  - Enhanced website branding consistency across all environments
+
 ### Version 3.0.3 (Latest - Pending Approval)
 - Configured OpenGraph image for social media sharing:
   - Enhanced metadata configuration in layout.tsx with comprehensive OpenGraph tags
