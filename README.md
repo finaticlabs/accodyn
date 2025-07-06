@@ -4,6 +4,14 @@ This is the official website for Accodyn Tech, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 3.0.2 (Latest - Pending Approval)
+- Updated Navigation component to use logo image:
+  - Replaced text-based "Accodyn Tech" with nav-bar-logo.png image
+  - Added Next.js Image component for optimized loading
+  - Implemented responsive logo sizing (h-8 sm:h-10 w-auto)
+  - Added proper alt text for accessibility
+  - Enhanced visual branding consistency
+
 ### Version 3.0.1 (Latest - Pending Approval)
 - Removed all image file references from codebase for rebranding:
   - Removed favicon references from app/layout.tsx (favicon.ico and favicon.svg)
