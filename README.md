@@ -4,7 +4,18 @@ This is the official website for Accodyn Tech, a comprehensive software suite fo
 
 ## Changelog
 
-### Version 3.0.4 (Latest - Pending Approval)
+### Version 3.0.5 (Latest - Pending Approval)
+- Complete favicon and branding assets update:
+  - Added comprehensive favicon system with both dark and light variants
+  - Added OpenGraph image (app/opengraph-image.png) for social media sharing
+  - Updated app/favicon.ico with new branding
+  - Added favicon directory with organized dark/light theme variants
+  - Removed old favicon files (public/favicon.ico, public/favicon.svg)
+  - Removed legacy flw.png file
+  - Updated package-lock.json with latest dependencies
+  - Enhanced website branding consistency across all platforms and themes
+
+### Version 3.0.4 (Latest - Approved)
 - Fixed nav-bar-logo.png deployment issue:
   - Added nav-bar-logo.png to git repository (was previously untracked)
   - Resolved Vercel deployment issue where logo was not loading
