@@ -4,6 +4,15 @@ This is the official website for Accodyn Tech, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 3.0.3 (Latest - Pending Approval)
+- Configured OpenGraph image for social media sharing:
+  - Enhanced metadata configuration in layout.tsx with comprehensive OpenGraph tags
+  - Added Twitter Card support for better Twitter sharing
+  - Configured opengraph-image.png as the default social media preview image
+  - Added proper meta tags for Facebook, WhatsApp, LinkedIn, and other platforms
+  - Improved SEO with additional metadata fields (keywords, authors, etc.)
+  - Added robots.txt directives for better search engine optimization
+
 ### Version 3.0.2 (Latest - Pending Approval)
 - Updated Navigation component to use logo image:
   - Replaced text-based "Accodyn Tech" with nav-bar-logo.png image
