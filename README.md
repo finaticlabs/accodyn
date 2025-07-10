@@ -4,6 +4,12 @@ This is the official website for Accodyn Tech, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 3.0.6 (Latest - Pending Approval)
+- Updated company branding in the footer:
+  - Changed email from info@accodyntech.com to info@accodyn.com.
+  - Updated copyright from "Accodyn Tech" to "Accodyn".
+  - Updated LinkedIn URL to reflect the new branding.
+
 ### Version 3.0.5 (Latest - Pending Approval)
 - Complete favicon and branding assets update:
   - Added comprehensive favicon system with both dark and light variants

@@ -29,17 +29,17 @@ export default function Footer() {
       <footer className="w-full max-w-[1400px] mx-auto px-8 py-8 border-t border-white/5">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center space-x-2">
-            <span className="text-white/60 text-sm">© 2025 Accodyn Tech. All rights reserved.</span>
+            <span className="text-white/60 text-sm">© 2025 Accodyn. All rights reserved.</span>
           </div>
           <div className="flex flex-wrap items-center gap-2 justify-center md:justify-start">
             <span className="text-sm text-white/60">Contact:</span>
             <Link 
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=info@accodyntech.com" 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=info@accodyn.com" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-white/60 hover:text-white transition-colors"
             >
-              info@accodyntech.com
+              info@accodyn.com
             </Link>
             <span className="text-white/60 hidden sm:inline">|</span>
             <Link
@@ -53,7 +53,7 @@ export default function Footer() {
             </Link>
             <span className="text-white/60 hidden sm:inline">|</span>
             <Link
-              href="https://www.linkedin.com/company/accodyn-tech/posts/?feedView=all"
+              href="https://www.linkedin.com/company/accodyn/posts/?feedView=all"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/60 hover:text-white transition-colors"
