@@ -13,8 +13,8 @@ export default function Navigation() {
         <Image
           src="/nav-bar-logo.png"
           alt="Accodyn Tech"
-          width={120}
-          height={40}
+          width={400}  // Increased from 120
+          height={100} // Increased from 40
           className="h-8 sm:h-10 w-auto"
         />
       </Link>

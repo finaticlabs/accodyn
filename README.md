@@ -4,6 +4,11 @@ This is the official website for Accodyn Tech, a comprehensive software suite fo
 
 ## Changelog
 
+### Version 3.0.7 (Latest - Pending Approval)
+- Fixed low-resolution logo in the navigation bar:
+  - Increased the `width` and `height` properties of the `Image` component.
+  - Ensured the logo scales properly on all devices.
+
 ### Version 3.0.6 (Latest - Pending Approval)
 - Updated company branding in the footer:
   - Changed email from info@accodyntech.com to info@accodyn.com.
